@@ -1,0 +1,190 @@
+{{ 'bundle-save.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign discount_2 = section.settings.discount_2 | default: 10
+  assign discount_3 = section.settings.discount_3 | default: 15
+  assign most_popular_tier = section.settings.most_popular_tier | default: 2
+  assign default_tier = section.settings.default_tier | default: 2
+  assign redirect_to_cart = section.settings.redirect_to_cart
+-%}
+
+<div class="bundle-save page-width">
+  <div
+    data-bundle-save
+    data-product="{{ product | json | escape }}"
+    data-money-format="{{ shop.money_format | escape }}"
+    data-settings='{
+      "heading": {{ section.settings.heading | json }},
+      "label_1": {{ section.settings.label_1 | json }},
+      "label_2": {{ section.settings.label_2 | json }},
+      "label_3": {{ section.settings.label_3 | json }},
+      "sublabel_1": {{ section.settings.sublabel_1 | json }},
+      "sublabel_2": {{ section.settings.sublabel_2 | json }},
+      "sublabel_3": {{ section.settings.sublabel_3 | json }},
+      "discount_2": {{ discount_2 | json }},
+      "discount_3": {{ discount_3 | json }},
+      "most_popular_tier": {{ most_popular_tier | json }},
+      "default_tier": {{ default_tier | json }},
+      "badge_label": {{ section.settings.badge_label | json }},
+      "atc_label": {{ section.settings.atc_label | json }},
+      "success_message": {{ section.settings.success_message | json }},
+      "redirect_to_cart": {{ redirect_to_cart | json }}
+    }'
+  >
+    {{- 'Loading...' -}}
+  </div>
+</div>
+
+<script src="{{ 'bundle-save.js' | asset_url }}" defer></script>
+
+{% schema %}
+{
+  "name": "Bundle & Save",
+  "tag": "section",
+  "class": "section",
+  "limit": 1,
+  "enabled_on": {
+    "templates": ["product"]
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Bundle & Save"
+    },
+    {
+      "type": "text",
+      "id": "badge_label",
+      "label": "Badge label (Most Popular)",
+      "default": "Most Popular"
+    },
+    {
+      "type": "header",
+      "content": "Tier 1 — Single item"
+    },
+    {
+      "type": "text",
+      "id": "label_1",
+      "label": "Title",
+      "info": "Leave blank to use product title"
+    },
+    {
+      "type": "text",
+      "id": "sublabel_1",
+      "label": "Subtitle",
+      "default": "Standard price"
+    },
+    {
+      "type": "header",
+      "content": "Tier 2 — Two items"
+    },
+    {
+      "type": "text",
+      "id": "label_2",
+      "label": "Title",
+      "default": "Duo"
+    },
+    {
+      "type": "text",
+      "id": "sublabel_2",
+      "label": "Subtitle",
+      "info": "Leave blank to auto-generate from discount"
+    },
+    {
+      "type": "range",
+      "id": "discount_2",
+      "label": "Discount %",
+      "min": 0,
+      "max": 60,
+      "step": 1,
+      "default": 10,
+      "unit": "%"
+    },
+    {
+      "type": "header",
+      "content": "Tier 3 — Three items"
+    },
+    {
+      "type": "text",
+      "id": "label_3",
+      "label": "Title",
+      "default": "Trio"
+    },
+    {
+      "type": "text",
+      "id": "sublabel_3",
+      "label": "Subtitle",
+      "info": "Leave blank to auto-generate from discount"
+    },
+    {
+      "type": "range",
+      "id": "discount_3",
+      "label": "Discount %",
+      "min": 0,
+      "max": 60,
+      "step": 1,
+      "default": 15,
+      "unit": "%"
+    },
+    {
+      "type": "header",
+      "content": "Behaviour"
+    },
+    {
+      "type": "select",
+      "id": "most_popular_tier",
+      "label": "\"Most Popular\" badge on tier",
+      "options": [
+        { "value": "1", "label": "Tier 1 (1 item)" },
+        { "value": "2", "label": "Tier 2 (2 items)" },
+        { "value": "3", "label": "Tier 3 (3 items)" }
+      ],
+      "default": "2"
+    },
+    {
+      "type": "select",
+      "id": "default_tier",
+      "label": "Pre-selected tier",
+      "options": [
+        { "value": "1", "label": "Tier 1" },
+        { "value": "2", "label": "Tier 2 (recommended)" },
+        { "value": "3", "label": "Tier 3" }
+      ],
+      "default": "2"
+    },
+    {
+      "type": "checkbox",
+      "id": "redirect_to_cart",
+      "label": "Redirect to cart page after adding",
+      "default": false,
+      "info": "If unchecked, tries to open cart drawer"
+    },
+    {
+      "type": "header",
+      "content": "Button"
+    },
+    {
+      "type": "text",
+      "id": "atc_label",
+      "label": "Add to cart button text",
+      "default": "Add to Cart"
+    },
+    {
+      "type": "text",
+      "id": "success_message",
+      "label": "Success message",
+      "default": "✓ Added to cart!"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Bundle & Save"
+    }
+  ]
+}
+{% endschema %}
