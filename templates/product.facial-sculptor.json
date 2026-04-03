@@ -83,7 +83,12 @@
             "default_tier": "2",
             "atc_label": "Add to Cart",
             "success_message": "Added to cart!",
-            "redirect_to_cart": false
+            "redirect_action": "drawer",
+            "compare_price_color": "#999999",
+            "compare_price_size": 15,
+            "atc_bg_color": "",
+            "atc_text_color": "",
+            "sticky_mobile_atc": true
           }
         },
         "custom_liquid_UPiVwW": {
