@@ -182,14 +182,52 @@
         "padding_bottom": 24
       }
     },
-    "custom_liquid_jwAVFn": {
-      "type": "custom-liquid",
-      "name": "companies logo block",
+    "press_logos_GARNYg": {
+      "type": "press-logos",
+      "blocks": {
+        "logo_kxkkE3": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/allure.webp",
+            "text": ""
+          }
+        },
+        "logo_Qgj6Xd": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/vogue.webp",
+            "text": ""
+          }
+        },
+        "logo_EYinzE": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/marie_daire.webp",
+            "text": ""
+          }
+        },
+        "logo_tJhGeA": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/elle.webp",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_kxkkE3",
+        "logo_Qgj6Xd",
+        "logo_EYinzE",
+        "logo_tJhGeA"
+      ],
+      "name": "Press Logos",
       "settings": {
-        "custom_liquid": "<style>\n  @media screen and (min-width: 769px) {\n    .logos-row {\n      justify-content: center !important;\n    }\n  }\n</style>\n\n<div style=\"background-color: #FFDCE5; padding: 40px 0;\">\n  <div class=\"logos-row\" style=\"\n    display: flex;\n    overflow-x: auto;\n    gap: 60px;\n    padding: 0 40px;\n    scroll-padding-left: 40px;\n    -webkit-overflow-scrolling: touch;\n  \">\n\n    {% assign logos = \n      \"allure.webp,\n      marie_daire.webp,\n      vogue.webp,\n      elle.webp\" | split: \",\" %}\n\n    {% for logo in logos %}\n      <div style=\"\n        flex: 0 0 auto;\n        width: 240px;\n        text-align: center;\n        scroll-snap-align: start;\n      \">\n        <div style=\"\n          width: 100%;\n          height: 0;\n          padding-top: 35%;\n          position: relative;\n        \">\n          <img \n            src=\"https://cdn.shopify.com/s/files/1/0951/2766/7027/files/{{ logo | strip }}\" \n            alt=\"logo\" \n            style=\"\n              position: absolute;\n              top: 0;\n              left: 0;\n              width: 100%;\n              height: 100%;\n              object-fit: cover;\n            \" \n          />\n        </div>\n        <p style=\"font-size: 12px; line-height: 1.5; color: #000; margin-top: 0px; font-weight: 300;\">\n          {{ texts[forloop.index0] | strip }}\n        </p>\n      </div>\n    {% endfor %}\n  </div>\n</div>",
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "heading": "",
+        "heading_size": "h1",
+        "heading_font_size": 20,
+        "background_color": "#FFDCE5",
+        "padding_top": 32,
+        "padding_bottom": 32
       }
     },
     "how_to_steps_qiAfxG": {
@@ -470,7 +508,7 @@
   },
   "order": [
     "main",
-    "custom_liquid_jwAVFn",
+    "press_logos_GARNYg",
     "how_to_steps_qiAfxG",
     "reviews_slider_reFg8w",
     "rich_text_EjmYwB",
