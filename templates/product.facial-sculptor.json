@@ -87,18 +87,6 @@
             "sticky_mobile_atc": true
           }
         },
-        "custom_liquid_UPiVwW": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "<script>\n  document.addEventListener(\"DOMContentLoaded\", function () {\n    const interval = setInterval(() => {\n      const variants = document.querySelector(\".ft-qb__item-variants\");\n      if (variants) {\n        variants.remove();\n        clearInterval(interval);\n      }\n    }, 300);\n  });\n</script>"
-          }
-        },
-        "custom_liquid_34we4D": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "<div style=\"text-align: center; font-size: 12px; margin-bottom: -14px;\">\n  Guaranteed safe and secure checkout with:\n</div>\n<div>\n  <img src=\"https://cdn.shopify.com/s/files/1/0951/2766/7027/files/image_24.png\" alt=\"Image\" style=\"max-width: 100%; height: auto;\">\n</div>\n<div>\n</div>"
-          }
-        },
         "custom_liquid_EHpVXq": {
           "type": "custom_liquid",
           "name": "Mask+lifter bandle",
@@ -154,8 +142,6 @@
         "variant_picker_BNaGAm",
         "custom_liquid_PUyAyM",
         "bundle_save_YeJAWP",
-        "custom_liquid_UPiVwW",
-        "custom_liquid_34we4D",
         "custom_liquid_EHpVXq",
         "custom_liquid_qR3ATb",
         "collapsible_tab_y9Dbtb",
