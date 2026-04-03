@@ -251,16 +251,16 @@
           "type": "step",
           "settings": {
             "image": "shopify://shop_images/step-1.webp",
-            "title": "Step 1 — Title: Step 1: Prep Your Skin",
-            "text": "Text: Start with a clean face. Gently cleanse your skin and apply your favorite anti-aging serum we recommend pairing with our Hydrating Renewal Serum for optimal results, but you're welcome to use your own."
+            "title": "Step 1: Prep Your Skin",
+            "text": "Start with a clean face. Gently cleanse your skin and apply your favorite anti-aging serum we recommend pairing with our Hydrating Renewal Serum for optimal results, but you're welcome to use your own."
           }
         },
         "step_PDFPd3": {
           "type": "step",
           "settings": {
             "image": "shopify://shop_images/ssstik.io_kimmykfinds_1745169164311-ezgif.com-video-to-gif-converter_2.webp",
-            "title": "Step 1",
-            "text": ""
+            "title": "Step 2: Activate & Customize",
+            "text": "Hold the power button for 10 seconds until you hear a gentle hum this means your device is activated and ready. Select your preferred LED light therapy mode based on your skin goals: Red for anti-aging, green for fine lines & texture or all colors. Your personalized treatment awaits."
           }
         },
         "step_cHjWDW": {
