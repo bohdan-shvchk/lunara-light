@@ -912,6 +912,13 @@
 
               {%- when 'icon-with-text' -%}
                 {% render 'icon-with-text', block: block %}
+              {%- when 'rating_bar' -%}
+                <div class="product__rating-bar" style="display: flex; align-items: center; gap: 8px; font-size: 12px;" {{ block.shopify_attributes }}>
+                  {%- if block.settings.stars_image != blank -%}
+                    <img src="{{ block.settings.stars_image | image_url: width: 100 }}" alt="stars" width="100" height="{{ block.settings.stars_height }}" style="height: {{ block.settings.stars_height }}px; width: auto;">
+                  {%- endif -%}
+                  <span><strong>({{ block.settings.rating }})</strong> {{ block.settings.label }}</span>
+                </div>
               {%- when 'gift_badge' -%}
                 {%- if block.settings.product_handle == blank or block.settings.product_handle == product.handle -%}
                   <div class="badge-2" {{ block.shopify_attributes }}>
@@ -1716,6 +1723,39 @@
           "id": "enable_quick_add",
           "label": "t:sections.main-product.blocks.complementary_products.settings.enable_quick_add.label",
           "default": false
+        }
+      ]
+    },
+    {
+      "type": "rating_bar",
+      "name": "Rating Bar",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "stars_image",
+          "label": "Stars image"
+        },
+        {
+          "type": "range",
+          "id": "stars_height",
+          "min": 12,
+          "max": 40,
+          "step": 2,
+          "unit": "px",
+          "label": "Stars height",
+          "default": 20
+        },
+        {
+          "type": "text",
+          "id": "rating",
+          "label": "Rating",
+          "default": "4.9"
+        },
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Label",
+          "default": "based on 686 Reviews"
         }
       ]
     },
