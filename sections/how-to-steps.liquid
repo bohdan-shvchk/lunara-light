@@ -14,7 +14,7 @@
     {%- for block in section.blocks -%}
       <div class="how-to-steps__item" {{ block.shopify_attributes }}>
         {%- if block.settings.image != blank -%}
-          <div class="how-to-steps__image">
+          <div class="how-to-steps__image" style="border-radius: {{ section.settings.image_radius }}px;">
             <img
               src="{{ block.settings.image | image_url: width: 760 }}"
               alt="{{ block.settings.image.alt | default: block.settings.title }}"
@@ -53,6 +53,16 @@
       "id": "heading",
       "label": "Heading",
       "default": "in 3 simple steps"
+    },
+    {
+      "type": "range",
+      "id": "image_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Image border radius",
+      "default": 20
     },
     {
       "type": "color",
