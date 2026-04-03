@@ -383,5 +383,28 @@
     {%- if settings.cart_type == 'drawer' -%}
       <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+
+    <script>
+      (function() {
+        var currentLocale = {{ request.locale.iso_code | json }};
+        if (currentLocale !== 'en') return;
+
+        var cookieName = 'locale_redirected';
+        if (document.cookie.indexOf(cookieName + '=1') !== -1) return;
+
+        var lang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+        var locale = null;
+
+        if (lang.startsWith('es')) locale = 'es';
+        else if (lang.startsWith('it')) locale = 'it';
+
+        if (locale) {
+          document.cookie = cookieName + '=1; path=/; max-age=86400';
+          var path = window.location.pathname;
+          var search = window.location.search;
+          window.location.replace('/' + locale + path + search);
+        }
+      })();
+    </script>
   </body>
 </html>
