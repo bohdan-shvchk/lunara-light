@@ -103,17 +103,10 @@
           "settings": {
             "product_handle": "",
             "image": "shopify://shop_images/Bandle-lifting-banner.png",
-            "headline": "Power Duo. Compact Price.",
-            "subheadline": "Skincare that travels with you.",
+            "headline": "Only a Few Left — Travel Bundle",
+            "subheadline": "Glow on the go — free Travel Case included in the bundle.",
             "cta_label": "Get A FREE Case",
             "link": ""
-          }
-        },
-        "custom_liquid_qR3ATb": {
-          "type": "custom_liquid",
-          "name": "Lifter+case bundle",
-          "settings": {
-            "custom_liquid": "{% if product.handle == \"7-led-lifting-and-firming-facial-device\" %}\n  <a href=\"https://lunara-light.com/products/7-led-lifting-and-firming-neck-massager-travel-case\" style=\"display: block; text-decoration: none; color: inherit;\">\n    <div class=\"badge-2\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0951/2766/7027/files/Bandle-lifting-banner.png\" loading=\"lazy\" alt=\"\" class=\"badge-img-1\">\n      <div class=\"badge-2-right\">\n        <div class=\"badge-badge-cont\">\n        </div>\n        <div class=\"badge-text-1\" style=\"padding-top: 0px;\">Only a Few Left — Travel Bundle</div>\n        <div class=\"badge-text-3\">Glow on the go — free Travel Case included in the bundle.</div>\n        <div class=\"badge-badge\" style=\"margin-top: 4px;\"><div>Get A FREE Case</div></div>\n      </div>\n    </div>\n  </a>\n{% endif %}"
           }
         },
         "collapsible_tab_y9Dbtb": {
@@ -159,7 +152,6 @@
         "bundle_save_YeJAWP",
         "promo_banner_PrH3KD",
         "promo_banner_kaXQWL",
-        "custom_liquid_qR3ATb",
         "collapsible_tab_y9Dbtb",
         "collapsible_tab_itnxQ8",
         "collapsible_tab_RNTJYi",
