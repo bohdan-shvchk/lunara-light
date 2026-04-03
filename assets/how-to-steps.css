@@ -1,0 +1,79 @@
+.how-to-steps {
+  text-align: center;
+}
+
+.how-to-steps__heading {
+  font-size: 2.6rem;
+  font-weight: 600;
+  margin-bottom: 4rem;
+  font-family: var(--font-heading-family);
+  font-style: var(--font-heading-style);
+  color: rgb(var(--color-foreground));
+}
+
+.how-to-steps__heading-accent {
+  color: #EC5F94;
+  font-style: italic;
+}
+
+.how-to-steps__scroll {
+  display: flex;
+  gap: 60px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 10px;
+  scrollbar-width: none;
+}
+
+.how-to-steps__scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.how-to-steps__item {
+  flex: 0 0 auto;
+  width: 100%;
+  max-width: 380px;
+  scroll-snap-align: start;
+  text-align: center;
+}
+
+.how-to-steps__image {
+  width: 100%;
+  height: 380px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #f0f0f0;
+  margin: 0 auto 20px;
+}
+
+.how-to-steps__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.how-to-steps__title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: rgb(var(--color-foreground));
+  font-family: var(--font-heading-family);
+}
+
+.how-to-steps__text {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: rgba(var(--color-foreground), 0.75);
+}
+
+@media screen and (min-width: 769px) {
+  .how-to-steps__scroll {
+    justify-content: center;
+    overflow-x: visible;
+  }
+
+  .how-to-steps__heading {
+    font-size: 3.2rem;
+  }
+}

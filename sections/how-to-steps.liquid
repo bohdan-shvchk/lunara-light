@@ -1,0 +1,125 @@
+{{ 'how-to-steps.css' | asset_url | stylesheet_tag }}
+
+<div class="how-to-steps" style="background-color: {{ section.settings.background_color }}; padding: {{ section.settings.padding_top }}px 20px {{ section.settings.padding_bottom }}px;">
+  {%- if section.settings.heading != blank -%}
+    <h2 class="how-to-steps__heading">
+      {%- if section.settings.heading_accent != blank -%}
+        <span class="how-to-steps__heading-accent">{{ section.settings.heading_accent }}</span>
+      {%- endif -%}
+      {{ section.settings.heading }}
+    </h2>
+  {%- endif -%}
+
+  <div class="how-to-steps__scroll">
+    {%- for block in section.blocks -%}
+      <div class="how-to-steps__item" {{ block.shopify_attributes }}>
+        {%- if block.settings.image != blank -%}
+          <div class="how-to-steps__image">
+            <img
+              src="{{ block.settings.image | image_url: width: 760 }}"
+              alt="{{ block.settings.image.alt | default: block.settings.title }}"
+              width="{{ block.settings.image.width }}"
+              height="{{ block.settings.image.height }}"
+              loading="lazy"
+            >
+          </div>
+        {%- endif -%}
+        {%- if block.settings.title != blank -%}
+          <h3 class="how-to-steps__title">{{ block.settings.title }}</h3>
+        {%- endif -%}
+        {%- if block.settings.text != blank -%}
+          <p class="how-to-steps__text">{{ block.settings.text }}</p>
+        {%- endif -%}
+      </div>
+    {%- endfor -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "How To Steps",
+  "tag": "section",
+  "class": "section",
+  "max_blocks": 6,
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading_accent",
+      "label": "Heading accent (colored italic)",
+      "default": "See results"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "in 3 simple steps"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accent color",
+      "default": "#EC5F94"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 60
+    }
+  ],
+  "blocks": [
+    {
+      "type": "step",
+      "name": "Step",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Step 1"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Description"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "How To Steps",
+      "blocks": [
+        { "type": "step" },
+        { "type": "step" },
+        { "type": "step" }
+      ]
+    }
+  ]
+}
+{% endschema %}
