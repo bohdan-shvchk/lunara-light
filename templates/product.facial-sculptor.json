@@ -328,6 +328,7 @@
         "review_AYTneB": {
           "type": "review",
           "settings": {
+            "image": "shopify://shop_images/13.jpg",
             "stars": 5,
             "title": "From Inflamed to Calm",
             "text": "I struggled with painful cystic acne and redness. This mask helped reduce the swelling and brought my skin back to a calm, even tone. It's the only thing that's worked long term.",
@@ -338,6 +339,7 @@
         "review_nLaM9A": {
           "type": "review",
           "settings": {
+            "image": "shopify://shop_images/15.jpg",
             "stars": 5,
             "title": "",
             "text": "",
@@ -348,6 +350,29 @@
         "review_WJ8Kta": {
           "type": "review",
           "settings": {
+            "image": "shopify://shop_images/16.jpg",
+            "stars": 5,
+            "title": "",
+            "text": "",
+            "author": "🇺🇸 — Jessica M.",
+            "verified": true
+          }
+        },
+        "review_9JE9Td": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/17.jpg",
+            "stars": 5,
+            "title": "",
+            "text": "",
+            "author": "🇺🇸 — Jessica M.",
+            "verified": true
+          }
+        },
+        "review_xMWnpf": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/19.jpg",
             "stars": 5,
             "title": "",
             "text": "",
@@ -363,7 +388,9 @@
         "review_waigdQ",
         "review_AYTneB",
         "review_nLaM9A",
-        "review_WJ8Kta"
+        "review_WJ8Kta",
+        "review_9JE9Td",
+        "review_xMWnpf"
       ],
       "name": "Reviews Slider",
       "settings": {
