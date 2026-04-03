@@ -933,6 +933,23 @@
                   {%- endif -%}
                   <span><strong>({{ block.settings.rating }})</strong> {{ block.settings.label }}</span>
                 </div>
+              {%- when 'promo_banner' -%}
+                {%- if block.settings.product_handle == blank or block.settings.product_handle == product.handle -%}
+                  <a href="{{ block.settings.link }}" style="display: block; text-decoration: none; color: inherit;" {{ block.shopify_attributes }}>
+                    <div class="badge-2">
+                      {%- if block.settings.image != blank -%}
+                        <img src="{{ block.settings.image | image_url: width: 300 }}" loading="lazy" alt="{{ block.settings.image.alt }}" width="300" height="auto" class="badge-img-1">
+                      {%- endif -%}
+                      <div class="badge-2-right">
+                        <div class="badge-text-1" style="padding-top: 0px;">{{ block.settings.headline }}</div>
+                        <div class="badge-text-3">{{ block.settings.subheadline }}</div>
+                        {%- if block.settings.cta_label != blank -%}
+                          <div class="badge-badge" style="margin-top: 4px;"><div>{{ block.settings.cta_label }}</div></div>
+                        {%- endif -%}
+                      </div>
+                    </div>
+                  </a>
+                {%- endif -%}
               {%- when 'gift_badge' -%}
                 {%- if block.settings.product_handle == blank or block.settings.product_handle == product.handle -%}
                   <div class="badge-2" {{ block.shopify_attributes }}>
@@ -1819,6 +1836,46 @@
           "id": "label",
           "label": "Label",
           "default": "based on 686 Reviews"
+        }
+      ]
+    },
+    {
+      "type": "promo_banner",
+      "name": "Promo Banner",
+      "settings": [
+        {
+          "type": "text",
+          "id": "product_handle",
+          "label": "Show only for product handle",
+          "info": "Leave empty to show on all products. E.g. led-mask-face-neck"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "headline",
+          "label": "Headline",
+          "default": "Power Duo. Compact Price."
+        },
+        {
+          "type": "text",
+          "id": "subheadline",
+          "label": "Subheadline",
+          "default": "Skincare that travels with you."
+        },
+        {
+          "type": "text",
+          "id": "cta_label",
+          "label": "Button label",
+          "default": "Shop the Bundle"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
         }
       ]
     },
