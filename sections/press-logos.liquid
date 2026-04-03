@@ -7,8 +7,8 @@
   <div class="press-logos__row">
     {%- for block in section.blocks -%}
       {%- if block.settings.image != blank -%}
-        <div class="press-logos__item" {{ block.shopify_attributes }}>
-          <div class="press-logos__img-wrap">
+        <div class="press-logos__item" style="width: {{ section.settings.logo_width }}px;" {{ block.shopify_attributes }}>
+          <div class="press-logos__img-wrap" style="height: {{ section.settings.logo_height }}px; padding-top: 0;">
             <img
               src="{{ block.settings.image | image_url: width: 480 }}"
               alt="{{ block.settings.image.alt | default: 'logo' }}"
@@ -60,6 +60,26 @@
       "unit": "px",
       "label": "Heading font size (overrides size above, 0 = auto)",
       "default": 0
+    },
+    {
+      "type": "range",
+      "id": "logo_width",
+      "min": 100,
+      "max": 400,
+      "step": 10,
+      "unit": "px",
+      "label": "Logo width",
+      "default": 240
+    },
+    {
+      "type": "range",
+      "id": "logo_height",
+      "min": 40,
+      "max": 200,
+      "step": 10,
+      "unit": "px",
+      "label": "Logo height",
+      "default": 80
     },
     {
       "type": "color",
