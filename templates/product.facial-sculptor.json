@@ -313,12 +313,57 @@
             "author": "🇺🇸 — Lindsey M.",
             "verified": true
           }
+        },
+        "review_waigdQ": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/12.jpg",
+            "stars": 5,
+            "title": "Breakouts Under Control",
+            "text": "My hormonal acne has always flared up around my jawline — this mask changed that. After just two weeks, my breakouts slowed down and my skin feels calmer and clearer.",
+            "author": "🇺🇸 — Ashley T.",
+            "verified": true
+          }
+        },
+        "review_AYTneB": {
+          "type": "review",
+          "settings": {
+            "stars": 5,
+            "title": "",
+            "text": "",
+            "author": "🇺🇸 — Jessica M.",
+            "verified": true
+          }
+        },
+        "review_nLaM9A": {
+          "type": "review",
+          "settings": {
+            "stars": 5,
+            "title": "",
+            "text": "",
+            "author": "🇺🇸 — Jessica M.",
+            "verified": true
+          }
+        },
+        "review_WJ8Kta": {
+          "type": "review",
+          "settings": {
+            "stars": 5,
+            "title": "",
+            "text": "",
+            "author": "🇺🇸 — Jessica M.",
+            "verified": true
+          }
         }
       },
       "block_order": [
         "review_UycKTe",
         "review_MRm9qf",
-        "review_JVV3mx"
+        "review_JVV3mx",
+        "review_waigdQ",
+        "review_AYTneB",
+        "review_nLaM9A",
+        "review_WJ8Kta"
       ],
       "name": "Reviews Slider",
       "settings": {
