@@ -14,6 +14,8 @@
 }
 
 .reviews-slider-swiper {
+  max-width: 1100px;
+  margin: 0 auto;
   padding: 20px 40px 50px !important;
   position: relative;
 }
@@ -70,10 +72,12 @@
 
 .author-name {
   color: rgb(var(--color-foreground));
+  font-size: 1.2rem;
 }
 
 .verified-badge {
   color: green;
+  font-size: 1.2rem;
 }
 
 .custom-swiper-button {
@@ -106,5 +110,13 @@
 }
 
 .swiper-pagination-bullet-active {
-  background: rgb(var(--color-foreground));
+  background: #fa9eb2;
+}
+
+.reviews-slider-swiper img.arrow-icon,
+.reviews-slider-swiper .custom-swiper-button img {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  margin: 4px;
 }
