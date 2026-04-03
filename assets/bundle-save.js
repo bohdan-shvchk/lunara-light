@@ -92,7 +92,7 @@ class BundleSave {
   }
 
   _renderTier(tier) {
-    const { discounted, original, pct, saved } = this._getTierPrice(tier);
+    const { discounted, original, compareTotal, pct, saved } = this._getTierPrice(tier);
     const isSelected = this.selectedTier === tier;
     const isMostPopular = parseInt(this.settings.most_popular_tier) === tier;
 
