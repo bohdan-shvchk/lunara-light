@@ -192,6 +192,48 @@
         "padding_bottom": 0
       }
     },
+    "press_logos_izGJ4m": {
+      "type": "press-logos",
+      "blocks": {
+        "logo_hxT8hM": {
+          "type": "logo",
+          "settings": {
+            "text": ""
+          }
+        },
+        "logo_yN9ji3": {
+          "type": "logo",
+          "settings": {
+            "text": ""
+          }
+        },
+        "logo_MV4KYm": {
+          "type": "logo",
+          "settings": {
+            "text": ""
+          }
+        },
+        "logo_rdkpbJ": {
+          "type": "logo",
+          "settings": {
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_hxT8hM",
+        "logo_yN9ji3",
+        "logo_MV4KYm",
+        "logo_rdkpbJ"
+      ],
+      "name": "Press Logos",
+      "settings": {
+        "heading": "As seen in",
+        "background_color": "#FFDCE5",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
     "custom_liquid_tmEWzY": {
       "type": "custom-liquid",
       "name": "steps",
@@ -350,6 +392,7 @@
   "order": [
     "main",
     "custom_liquid_jwAVFn",
+    "press_logos_izGJ4m",
     "custom_liquid_tmEWzY",
     "rich_text_JVE9FN",
     "custom_liquid_cH7k4D",
