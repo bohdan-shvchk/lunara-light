@@ -108,9 +108,7 @@ class BundleSave {
     const compareHtml = compareTotal
       ? `<span class="bundle-tier__price-compare" style="color:${compareColor};font-size:${compareSize}px">${this._formatMoney(compareTotal)}</span>` : '';
 
-    // Row 2: price × qty (normal), only for tier 2 and 3
-    const priceTotalHtml = tier > 1
-      ? `<span class="bundle-tier__price-base" style="color:${compareColor};font-size:${compareSize}px">${this._formatMoney(priceTotal)}</span>` : '';
+    const priceTotalHtml = '';
 
     // Row 3: Extra save (green), only for tier 2 and 3
     const saveHtml = tier > 1 && extraSave > 0
@@ -130,7 +128,7 @@ class BundleSave {
           <div class="bundle-tier__price">
             ${compareHtml}
             ${priceTotalHtml}
-            <span class="bundle-tier__price-current">${this._formatMoney(finalPrice)}</span>
+            <span class="bundle-tier__price-current" style="${tier > 1 ? 'color:#38a169' : ''}">${this._formatMoney(finalPrice)}</span>
             ${saveHtml}
           </div>
         </div>
