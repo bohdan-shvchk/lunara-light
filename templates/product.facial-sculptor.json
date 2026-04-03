@@ -225,7 +225,9 @@
         "heading": "",
         "heading_size": "h1",
         "heading_font_size": 20,
-        "background_color": "#FFDCE5",
+        "logo_width": 250,
+        "logo_height": 180,
+        "background_color": "#ffdce5",
         "padding_top": 32,
         "padding_bottom": 32
       }
