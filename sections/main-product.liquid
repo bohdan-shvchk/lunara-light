@@ -912,6 +912,23 @@
 
               {%- when 'icon-with-text' -%}
                 {% render 'icon-with-text', block: block %}
+              {%- when 'gift_badge' -%}
+                {%- if block.settings.product_handle == blank or block.settings.product_handle == product.handle -%}
+                  <div class="badge-2" {{ block.shopify_attributes }}>
+                    {%- if block.settings.image != blank -%}
+                      <img src="{{ block.settings.image | image_url: width: 300 }}" loading="lazy" alt="{{ block.settings.image.alt }}" class="badge-img-1">
+                    {%- endif -%}
+                    <div class="badge-2-right">
+                      <div class="badge-badge-cont">
+                        <div class="badge-badge"><div>{{ block.settings.badge_emoji }} {{ block.settings.badge_label }}</div></div>
+                        <div class="badge-text-2"><span class="text-span-badge"><strong>{{ block.settings.original_price }}</strong></span> FREE</div>
+                      </div>
+                      <div class="badge-text-1">{{ block.settings.headline }}</div>
+                      <div class="badge-text-3">{{ block.settings.subheadline }}</div>
+                      <div class="badge-text-4">{{ block.settings.bullets }}</div>
+                    </div>
+                  </div>
+                {%- endif -%}
             {%- endcase -%}
           {%- endfor -%}
           <a href="{{ product.url }}" class="link product__view-details animate-arrow">
@@ -1699,6 +1716,59 @@
           "id": "enable_quick_add",
           "label": "t:sections.main-product.blocks.complementary_products.settings.enable_quick_add.label",
           "default": false
+        }
+      ]
+    },
+    {
+      "type": "gift_badge",
+      "name": "Gift Badge",
+      "settings": [
+        {
+          "type": "text",
+          "id": "product_handle",
+          "label": "Show only for product handle",
+          "info": "Leave empty to show on all products. E.g. led-mask-face-neck"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Badge image"
+        },
+        {
+          "type": "text",
+          "id": "badge_emoji",
+          "label": "Badge emoji",
+          "default": "🎁"
+        },
+        {
+          "type": "text",
+          "id": "badge_label",
+          "label": "Badge label",
+          "default": "Only until July 10"
+        },
+        {
+          "type": "text",
+          "id": "original_price",
+          "label": "Original price",
+          "default": "$99"
+        },
+        {
+          "type": "text",
+          "id": "headline",
+          "label": "Headline",
+          "default": "Get a FREE Neck Module"
+        },
+        {
+          "type": "text",
+          "id": "subheadline",
+          "label": "Subheadline",
+          "default": "with every Lunara LED mask order. No code needed. Limited time."
+        },
+        {
+          "type": "richtext",
+          "id": "bullets",
+          "label": "Bullets",
+          "default": "<p>✅ No code needed<br/>✅ Automatically added<br/>✅ Limited quantities</p>"
         }
       ]
     },
