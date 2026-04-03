@@ -35,8 +35,20 @@
         "custom_liquid_AwdTXd": {
           "type": "custom_liquid",
           "name": "Limited quantity!",
+          "disabled": true,
           "settings": {
             "custom_liquid": "{% if product.selected_or_first_available_variant.available and product.selected_or_first_available_variant.inventory_management == 'shopify' %}\n  {% assign inventory = product.selected_or_first_available_variant.inventory_quantity %}\n  {% if inventory > 0 %}\n    <p style=\"font-weight: 500; color: #d00; font-size: 16px;\">\n      Limited quantity! 🔥 only {{ inventory }} pieces left in stock\n    </p>\n  {% endif %}\n{% endif %}"
+          }
+        },
+        "low_stock_alert_eqTC9T": {
+          "type": "low_stock_alert",
+          "settings": {
+            "threshold": 10,
+            "emoji": "🔥",
+            "prefix_text": "Limited quantity! Only",
+            "suffix_text": "pieces left in stock",
+            "color": "#dd0000",
+            "font_size": 16
           }
         },
         "custom_liquid_DWrMNX": {
@@ -145,6 +157,7 @@
         "title",
         "rating_bar_cxVKdQ",
         "custom_liquid_AwdTXd",
+        "low_stock_alert_eqTC9T",
         "custom_liquid_DWrMNX",
         "price_W4BKii",
         "variant_picker_BNaGAm",
