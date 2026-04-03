@@ -1,0 +1,64 @@
+.press-logos {
+  overflow: hidden;
+}
+
+.press-logos__heading {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 0 0 2rem;
+  color: inherit;
+}
+
+.press-logos__row {
+  display: flex;
+  overflow-x: auto;
+  gap: 60px;
+  padding: 0 40px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.press-logos__row::-webkit-scrollbar {
+  display: none;
+}
+
+.press-logos__item {
+  flex: 0 0 auto;
+  width: 240px;
+  text-align: center;
+  scroll-snap-align: start;
+}
+
+.press-logos__img-wrap {
+  width: 100%;
+  height: 0;
+  padding-top: 35%;
+  position: relative;
+}
+
+.press-logos__img-wrap img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.press-logos__text {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: inherit;
+  margin-top: 8px;
+  font-weight: 300;
+}
+
+@media screen and (min-width: 769px) {
+  .press-logos__row {
+    justify-content: center;
+    overflow-x: visible;
+  }
+}
