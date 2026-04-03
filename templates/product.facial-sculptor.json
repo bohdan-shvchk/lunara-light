@@ -86,6 +86,13 @@
             "redirect_to_cart": false
           }
         },
+        "buy_buttons_7HMq7m": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
         "custom_liquid_UPiVwW": {
           "type": "custom_liquid",
           "settings": {
@@ -154,6 +161,7 @@
         "variant_picker_BNaGAm",
         "custom_liquid_PUyAyM",
         "bundle_save_YeJAWP",
+        "buy_buttons_7HMq7m",
         "custom_liquid_UPiVwW",
         "custom_liquid_34we4D",
         "custom_liquid_EHpVXq",
