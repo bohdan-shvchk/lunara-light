@@ -284,9 +284,10 @@
         "review_UycKTe": {
           "type": "review",
           "settings": {
+            "image": "shopify://shop_images/11.jpg",
             "stars": 5,
-            "title": "",
-            "text": "",
+            "title": "Acne Marks Faded",
+            "text": "This mask helped fade my post-acne redness way more than any serum I've used. I use it every night while reading. After one month, my cheeks are clearer and tone is more even.",
             "author": "🇺🇸 — Jessica M.",
             "verified": true
           }
@@ -294,6 +295,7 @@
         "review_MRm9qf": {
           "type": "review",
           "settings": {
+            "image": "shopify://shop_images/16.jpg",
             "stars": 5,
             "title": "",
             "text": "",
