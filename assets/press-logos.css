@@ -4,12 +4,7 @@
 
 .press-logos__heading {
   text-align: center;
-  font-size: 1.2rem;
-  font-weight: 500;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
   margin: 0 0 2rem;
-  color: inherit;
 }
 
 .press-logos__row {

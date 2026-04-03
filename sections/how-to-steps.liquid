@@ -2,7 +2,7 @@
 
 <div class="how-to-steps" style="background-color: {{ section.settings.background_color }}; padding: {{ section.settings.padding_top }}px 20px {{ section.settings.padding_bottom }}px;">
   {%- if section.settings.heading != blank -%}
-    <h2 class="how-to-steps__heading">
+    <h2 class="title inline-richtext {{ section.settings.heading_size }} how-to-steps__heading">
       {%- if section.settings.heading_accent != blank -%}
         <span class="how-to-steps__heading-accent">{{ section.settings.heading_accent }}</span>
       {%- endif -%}
@@ -49,10 +49,22 @@
       "default": "See results"
     },
     {
-      "type": "text",
+      "type": "inline_richtext",
       "id": "heading",
       "label": "Heading",
       "default": "in 3 simple steps"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        { "value": "h2", "label": "Small" },
+        { "value": "h1", "label": "Medium" },
+        { "value": "h0", "label": "Large" },
+        { "value": "hxl", "label": "Extra large" }
+      ],
+      "default": "h1",
+      "label": "Heading size"
     },
     {
       "type": "range",

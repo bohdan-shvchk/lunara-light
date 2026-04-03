@@ -3,7 +3,7 @@
 
 <div class="reviews-slider-section" style="background-color: {{ section.settings.background_color }}; padding: {{ section.settings.padding_top }}px 0 {{ section.settings.padding_bottom }}px;">
   {%- if section.settings.heading != blank -%}
-    <h2 class="title inline-richtext reviews-slider__heading">{{ section.settings.heading }}</h2>
+    <h2 class="title inline-richtext {{ section.settings.heading_size }} reviews-slider__heading">{{ section.settings.heading }}</h2>
   {%- endif -%}
 
   <div class="swiper reviews-slider-swiper">
@@ -77,8 +77,8 @@
         clickable: true
       },
       breakpoints: {
-        480: { slidesPerView: 2 },
-        768: { slidesPerView: {{ section.settings.slides_desktop }} }
+        580: { slidesPerView: 2, spaceBetween: 20 },
+        900: { slidesPerView: {{ section.settings.slides_desktop }}, spaceBetween: 24 }
       }
     });
   });
@@ -95,6 +95,18 @@
       "id": "heading",
       "label": "Heading",
       "default": "What our customers say"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        { "value": "h2", "label": "Small" },
+        { "value": "h1", "label": "Medium" },
+        { "value": "h0", "label": "Large" },
+        { "value": "hxl", "label": "Extra large" }
+      ],
+      "default": "h1",
+      "label": "Heading size"
     },
     {
       "type": "color",

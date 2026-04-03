@@ -2,7 +2,7 @@
 
 <div class="press-logos color-{{ section.settings.color_scheme }}" style="background-color: {{ section.settings.background_color }}; padding: {{ section.settings.padding_top }}px 0 {{ section.settings.padding_bottom }}px;">
   {%- if section.settings.heading != blank -%}
-    <p class="press-logos__heading">{{ section.settings.heading }}</p>
+    <h2 class="title inline-richtext {{ section.settings.heading_size }} press-logos__heading">{{ section.settings.heading }}</h2>
   {%- endif -%}
   <div class="press-logos__row">
     {%- for block in section.blocks -%}
@@ -34,10 +34,22 @@
   "max_blocks": 10,
   "settings": [
     {
-      "type": "text",
+      "type": "inline_richtext",
       "id": "heading",
       "label": "Heading",
       "default": "As seen in"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        { "value": "h2", "label": "Small" },
+        { "value": "h1", "label": "Medium" },
+        { "value": "h0", "label": "Large" },
+        { "value": "hxl", "label": "Extra large" }
+      ],
+      "default": "h1",
+      "label": "Heading size"
     },
     {
       "type": "color",
