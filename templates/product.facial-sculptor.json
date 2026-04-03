@@ -281,7 +281,8 @@
       "settings": {
         "heading_accent": "See results",
         "heading": "in 3 simple steps",
-        "accent_color": "#EC5F94",
+        "image_radius": 10,
+        "accent_color": "#ec5f94",
         "background_color": "#ffffff",
         "padding_top": 60,
         "padding_bottom": 60
