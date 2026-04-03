@@ -70,13 +70,22 @@ class BundleSave {
 
   _render() {
     const tiers = [1, 2, 3].map(t => this._renderTier(t)).join('');
+    const bgColor = this.settings.atc_bg_color || '';
+    const textColor = this.settings.atc_text_color || '';
+    const btnStyle = [
+      bgColor ? `background-color:${bgColor}` : '',
+      textColor ? `color:${textColor}` : '',
+    ].filter(Boolean).join(';');
     this.container.innerHTML = `
       <div class="bundle-save__heading">${this.settings.heading || 'Bundle & Save'}</div>
       <div class="bundle-save__tiers">${tiers}</div>
-      <button class="bundle-save__atc" type="button">${this.settings.atc_label || 'Add to Cart'}</button>
+      <button class="bundle-save__atc" type="button" style="${btnStyle}">${this.settings.atc_label || 'Add to Cart'}</button>
       <p class="bundle-save__success"></p>
       <p class="bundle-save__error"></p>
     `;
+    if (this.settings.sticky_mobile_atc !== false && this.settings.sticky_mobile_atc !== 'false') {
+      this._initStickyAtc();
+    }
   }
 
   _renderTier(tier) {
@@ -88,8 +97,10 @@ class BundleSave {
       ? `<span class="bundle-tier__badge">${this.settings.badge_label || 'Most Popular'}</span>`
       : '';
 
+    const compareColor = this.settings.compare_price_color || '#999';
+    const compareSize = this.settings.compare_price_size || 13;
     const compareHtml = pct > 0
-      ? `<span class="bundle-tier__price-compare">${this._formatMoney(original)}</span>` : '';
+      ? `<span class="bundle-tier__price-compare" style="color:${compareColor};font-size:${compareSize}px">${this._formatMoney(original)}</span>` : '';
     const saveHtml = pct > 0
       ? `<span class="bundle-tier__price-save">Save ${this._formatMoney(saved)}</span>` : '';
 
@@ -235,12 +246,16 @@ class BundleSave {
       await this._addToCart(items);
       btn.disabled = false;
       btn.classList.remove('is-loading');
-      successEl.textContent = this.settings.success_message || 'Added to cart!';
-      successEl.classList.add('is-visible');
       this._updateCartCount();
-      if (this.settings.redirect_to_cart === 'true' || this.settings.redirect_to_cart === true) {
+
+      const action = this.settings.redirect_action || 'drawer';
+      if (action === 'checkout') {
+        window.location.href = '/checkout';
+      } else if (action === 'cart') {
         window.location.href = '/cart';
       } else {
+        successEl.textContent = this.settings.success_message || 'Added to cart!';
+        successEl.classList.add('is-visible');
         this._openCartDrawer();
       }
     } catch (err) {
@@ -249,6 +264,47 @@ class BundleSave {
       errorEl.textContent = err.message || 'Could not add to cart. Please try again.';
       errorEl.classList.add('is-visible');
     }
+  }
+
+  _initStickyAtc() {
+    const mq = window.matchMedia('(max-width: 767px)');
+    const origBtn = this.container.querySelector('.bundle-save__atc');
+    if (!origBtn) return;
+
+    let wrap = document.querySelector('.bundle-save-sticky');
+    if (!wrap) {
+      wrap = document.createElement('div');
+      wrap.className = 'bundle-save-sticky';
+      const clone = document.createElement('button');
+      clone.type = 'button';
+      clone.className = 'bundle-save__atc bundle-save-sticky__btn';
+      wrap.appendChild(clone);
+      document.body.appendChild(wrap);
+    }
+    const cloneBtn = wrap.querySelector('.bundle-save-sticky__btn');
+
+    const syncClone = () => {
+      cloneBtn.disabled = origBtn.disabled;
+      cloneBtn.innerHTML = origBtn.innerHTML;
+      cloneBtn.style.cssText = origBtn.style.cssText;
+    };
+    syncClone();
+
+    cloneBtn.addEventListener('click', () => {
+      if (!origBtn.disabled) this._handleAddToCart();
+    });
+
+    const io = new IntersectionObserver(entries => {
+      const visible = entries[0]?.isIntersecting;
+      wrap.style.display = (!visible && mq.matches) ? 'block' : 'none';
+      document.body.classList.toggle('has-bundle-sticky', !visible && mq.matches);
+    }, { threshold: [0, 0.01] });
+    io.observe(origBtn);
+
+    new MutationObserver(syncClone).observe(origBtn, { attributes: true, childList: true, subtree: true });
+    mq.addEventListener ? mq.addEventListener('change', () => {
+      if (!mq.matches) { wrap.style.display = 'none'; document.body.classList.remove('has-bundle-sticky'); }
+    }) : mq.addListener(() => {});
   }
 
   _buildCartItems() {

@@ -294,3 +294,29 @@
   .bundle-tier__price-current { font-size: 1.7rem; }
   .bundle-tier__title { font-size: 1.4rem; }
 }
+
+@media (max-width: 767px) {
+  .bundle-save-sticky {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    background: rgb(var(--color-background));
+    box-shadow: 0 -4px 12px rgba(0,0,0,.1);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  .bundle-save-sticky__btn {
+    width: 100% !important;
+    min-height: 56px !important;
+    font-size: 1.8rem !important;
+    border-radius: 0 !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.08em !important;
+  }
+  body.has-bundle-sticky {
+    padding-bottom: calc(56px + env(safe-area-inset-bottom));
+  }
+}

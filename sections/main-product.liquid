@@ -491,7 +491,12 @@
                     "badge_label": {{ block.settings.badge_label | json }},
                     "atc_label": {{ block.settings.atc_label | json }},
                     "success_message": {{ block.settings.success_message | json }},
-                    "redirect_to_cart": {{ block.settings.redirect_to_cart | json }}
+                    "redirect_action": {{ block.settings.redirect_action | json }},
+                    "compare_price_color": {{ block.settings.compare_price_color | json }},
+                    "compare_price_size": {{ block.settings.compare_price_size | json }},
+                    "atc_bg_color": {{ block.settings.atc_bg_color | json }},
+                    "atc_text_color": {{ block.settings.atc_text_color | json }},
+                    "sticky_mobile_atc": {{ block.settings.sticky_mobile_atc | json }}
                   }'
                   {{ block.shopify_attributes }}
                 >Loading...</div>
@@ -2648,10 +2653,55 @@
           "default": "Added to cart!"
         },
         {
+          "type": "select",
+          "id": "redirect_action",
+          "label": "After adding to cart",
+          "options": [
+            { "value": "drawer", "label": "Open cart drawer" },
+            { "value": "cart", "label": "Go to cart page" },
+            { "value": "checkout", "label": "Go to checkout" }
+          ],
+          "default": "drawer"
+        },
+        {
+          "type": "header",
+          "content": "Compare price style (all tiers)"
+        },
+        {
+          "type": "color",
+          "id": "compare_price_color",
+          "label": "Compare price color",
+          "default": "#999999"
+        },
+        {
+          "type": "range",
+          "id": "compare_price_size",
+          "label": "Compare price font size",
+          "min": 10,
+          "max": 20,
+          "step": 1,
+          "unit": "px",
+          "default": 13
+        },
+        {
+          "type": "header",
+          "content": "Button"
+        },
+        {
+          "type": "color",
+          "id": "atc_bg_color",
+          "label": "Button background color"
+        },
+        {
+          "type": "color",
+          "id": "atc_text_color",
+          "label": "Button text color"
+        },
+        {
           "type": "checkbox",
-          "id": "redirect_to_cart",
-          "label": "Redirect to cart after adding",
-          "default": false
+          "id": "sticky_mobile_atc",
+          "label": "Sticky button on mobile",
+          "default": true
         }
       ]
     }
