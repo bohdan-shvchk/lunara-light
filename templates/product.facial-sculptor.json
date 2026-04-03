@@ -306,10 +306,11 @@
         "review_JVV3mx": {
           "type": "review",
           "settings": {
+            "image": "shopify://shop_images/18.jpg",
             "stars": 5,
             "title": "No More Makeup Dependence",
-            "text": "",
-            "author": "🇺🇸 — Jessica M.",
+            "text": "For years I wore makeup to hide acne. Since using the Lunara mask, I finally feel comfortable bare-faced. My skin tone is smoother, and the bumps are gone.",
+            "author": "🇺🇸 — Lindsey M.",
             "verified": true
           }
         }
