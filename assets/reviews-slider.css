@@ -4,13 +4,8 @@
 
 .reviews-slider__heading {
   text-align: center;
-  font-size: 2.6rem;
-  font-weight: 600;
   margin-bottom: 3rem;
   padding: 0 20px;
-  font-family: var(--font-heading-family);
-  font-style: var(--font-heading-style);
-  color: rgb(var(--color-foreground));
 }
 
 .reviews-slider-swiper {
