@@ -278,6 +278,56 @@
         "padding_bottom": 40
       }
     },
+    "reviews_slider_reFg8w": {
+      "type": "reviews-slider",
+      "blocks": {
+        "review_UycKTe": {
+          "type": "review",
+          "settings": {
+            "stars": 5,
+            "title": "",
+            "text": "",
+            "author": "🇺🇸 — Jessica M.",
+            "verified": true
+          }
+        },
+        "review_MRm9qf": {
+          "type": "review",
+          "settings": {
+            "stars": 5,
+            "title": "",
+            "text": "",
+            "author": "🇺🇸 — Jessica M.",
+            "verified": true
+          }
+        },
+        "review_JVV3mx": {
+          "type": "review",
+          "settings": {
+            "stars": 5,
+            "title": "",
+            "text": "",
+            "author": "🇺🇸 — Jessica M.",
+            "verified": true
+          }
+        }
+      },
+      "block_order": [
+        "review_UycKTe",
+        "review_MRm9qf",
+        "review_JVV3mx"
+      ],
+      "name": "Reviews Slider",
+      "settings": {
+        "heading": "What our customers say",
+        "background_color": "#ffffff",
+        "card_border_color": "#ffdbe5",
+        "card_radius": 16,
+        "slides_desktop": 3,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
     "rich_text_EjmYwB": {
       "type": "rich-text",
       "blocks": {
@@ -387,6 +437,7 @@
     "how_to_steps_qiAfxG",
     "rich_text_JVE9FN",
     "custom_liquid_cH7k4D",
+    "reviews_slider_reFg8w",
     "rich_text_EjmYwB",
     "custom_liquid_TjtkNz",
     "custom_liquid_3rnGCc",
