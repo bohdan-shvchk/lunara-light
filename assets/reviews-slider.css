@@ -11,12 +11,14 @@
 .reviews-slider-swiper {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 20px 40px 50px !important;
+  padding: 20px 20px 50px !important;
   position: relative;
+  overflow: hidden !important;
 }
 
 .swiper-slide {
   height: auto;
+  box-sizing: border-box;
 }
 
 .review-card {
@@ -75,43 +77,30 @@
   font-size: 1.2rem;
 }
 
-.custom-swiper-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
-  cursor: pointer;
-  width: 36px;
-  height: 36px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2.4rem;
+/* Arrows */
+.reviews-slider-swiper .swiper-button-prev,
+.reviews-slider-swiper .swiper-button-next {
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  top: 35%;
 }
 
-.swiper-button-prev.custom-swiper-button {
-  left: 4px;
-  color: transparent;
+.reviews-slider-swiper .swiper-button-prev::after,
+.reviews-slider-swiper .swiper-button-next::after {
+  font-size: 1.4rem;
+  color: rgb(var(--color-foreground));
+  font-weight: 700;
 }
 
-.swiper-button-next.custom-swiper-button {
-  right: 4px;
-  color: transparent;
-}
-
-.swiper-button-prev.custom-swiper-button::after,
-.swiper-button-next.custom-swiper-button::after {
-  display: none;
+.reviews-slider-swiper .swiper-button-prev img,
+.reviews-slider-swiper .swiper-button-next img {
+  width: 32px;
+  height: 32px;
 }
 
 .swiper-pagination-bullet-active {
   background: #fa9eb2;
-}
-
-.reviews-slider-swiper img.arrow-icon,
-.reviews-slider-swiper .custom-swiper-button img {
-  position: absolute;
-  width: 32px;
-  height: 32px;
-  margin: 4px;
 }

@@ -2,7 +2,7 @@
 
 <div class="how-to-steps" style="background-color: {{ section.settings.background_color }}; padding: {{ section.settings.padding_top }}px 20px {{ section.settings.padding_bottom }}px;">
   {%- if section.settings.heading != blank -%}
-    <h2 class="title inline-richtext {{ section.settings.heading_size }} how-to-steps__heading">
+    <h2 class="title inline-richtext {{ section.settings.heading_size }} how-to-steps__heading"{% if section.settings.heading_font_size > 0 %} style="font-size: {{ section.settings.heading_font_size }}px;"{% endif %}>
       {%- if section.settings.heading_accent != blank -%}
         <span class="how-to-steps__heading-accent">{{ section.settings.heading_accent }}</span>
       {%- endif -%}
@@ -65,6 +65,16 @@
       ],
       "default": "h1",
       "label": "Heading size"
+    },
+    {
+      "type": "range",
+      "id": "heading_font_size",
+      "min": 0,
+      "max": 80,
+      "step": 2,
+      "unit": "px",
+      "label": "Heading font size (overrides size above, 0 = auto)",
+      "default": 0
     },
     {
       "type": "range",

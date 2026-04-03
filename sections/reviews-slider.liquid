@@ -3,7 +3,7 @@
 
 <div class="reviews-slider-section" style="background-color: {{ section.settings.background_color }}; padding: {{ section.settings.padding_top }}px 0 {{ section.settings.padding_bottom }}px;">
   {%- if section.settings.heading != blank -%}
-    <h2 class="title inline-richtext {{ section.settings.heading_size }} reviews-slider__heading">{{ section.settings.heading }}</h2>
+    <h2 class="title inline-richtext {{ section.settings.heading_size }} reviews-slider__heading"{% if section.settings.heading_font_size > 0 %} style="font-size: {{ section.settings.heading_font_size }}px;"{% endif %}>{{ section.settings.heading }}</h2>
   {%- endif -%}
 
   <div class="swiper reviews-slider-swiper">
@@ -64,24 +64,33 @@
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    new Swiper('.reviews-slider-swiper', {
-      slidesPerView: 1,
-      spaceBetween: 20,
-      navigation: {
-        nextEl: '.reviews-slider-swiper .swiper-button-next',
-        prevEl: '.reviews-slider-swiper .swiper-button-prev'
-      },
-      pagination: {
-        el: '.reviews-slider-swiper .swiper-pagination',
-        clickable: true
-      },
-      breakpoints: {
-        580: { slidesPerView: 2, spaceBetween: 20 },
-        900: { slidesPerView: {{ section.settings.slides_desktop }}, spaceBetween: 24 }
-      }
-    });
-  });
+  (function() {
+    function initSwiper() {
+      var el = document.querySelector('.reviews-slider-swiper');
+      if (!el) return;
+      if (el.swiper) el.swiper.destroy(true, true);
+      new Swiper(el, {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        navigation: {
+          nextEl: el.querySelector('.swiper-button-next'),
+          prevEl: el.querySelector('.swiper-button-prev')
+        },
+        pagination: {
+          el: el.querySelector('.swiper-pagination'),
+          clickable: true
+        },
+        breakpoints: {
+          580: { slidesPerView: 2, spaceBetween: 20 },
+          900: { slidesPerView: {{ section.settings.slides_desktop }}, spaceBetween: 24 }
+        }
+      });
+    }
+    document.addEventListener('DOMContentLoaded', initSwiper);
+    document.addEventListener('shopify:section:load', initSwiper);
+    document.addEventListener('shopify:block:select', initSwiper);
+  })();
 </script>
 
 {% schema %}
@@ -107,6 +116,16 @@
       ],
       "default": "h1",
       "label": "Heading size"
+    },
+    {
+      "type": "range",
+      "id": "heading_font_size",
+      "min": 0,
+      "max": 80,
+      "step": 2,
+      "unit": "px",
+      "label": "Heading font size (overrides size above, 0 = auto)",
+      "default": 0
     },
     {
       "type": "color",

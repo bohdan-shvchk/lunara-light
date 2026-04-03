@@ -2,7 +2,7 @@
 
 <div class="press-logos color-{{ section.settings.color_scheme }}" style="background-color: {{ section.settings.background_color }}; padding: {{ section.settings.padding_top }}px 0 {{ section.settings.padding_bottom }}px;">
   {%- if section.settings.heading != blank -%}
-    <h2 class="title inline-richtext {{ section.settings.heading_size }} press-logos__heading">{{ section.settings.heading }}</h2>
+    <h2 class="title inline-richtext {{ section.settings.heading_size }} press-logos__heading"{% if section.settings.heading_font_size > 0 %} style="font-size: {{ section.settings.heading_font_size }}px;"{% endif %}>{{ section.settings.heading }}</h2>
   {%- endif -%}
   <div class="press-logos__row">
     {%- for block in section.blocks -%}
@@ -50,6 +50,16 @@
       ],
       "default": "h1",
       "label": "Heading size"
+    },
+    {
+      "type": "range",
+      "id": "heading_font_size",
+      "min": 0,
+      "max": 80,
+      "step": 2,
+      "unit": "px",
+      "label": "Heading font size (overrides size above, 0 = auto)",
+      "default": 0
     },
     {
       "type": "color",
