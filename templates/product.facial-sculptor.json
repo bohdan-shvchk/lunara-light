@@ -87,6 +87,17 @@
             "sticky_mobile_atc": true
           }
         },
+        "promo_banner_PrH3KD": {
+          "type": "promo_banner",
+          "settings": {
+            "product_handle": "",
+            "image": "shopify://shop_images/neck-bandle-banner.png",
+            "headline": "Power Duo. Compact Price.",
+            "subheadline": "Skincare that travels with you.",
+            "cta_label": "Shop the Bundle",
+            "link": ""
+          }
+        },
         "custom_liquid_EHpVXq": {
           "type": "custom_liquid",
           "name": "Mask+lifter bandle",
@@ -142,6 +153,7 @@
         "variant_picker_BNaGAm",
         "custom_liquid_PUyAyM",
         "bundle_save_YeJAWP",
+        "promo_banner_PrH3KD",
         "custom_liquid_EHpVXq",
         "custom_liquid_qR3ATb",
         "collapsible_tab_y9Dbtb",
