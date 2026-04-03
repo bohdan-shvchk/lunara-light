@@ -229,53 +229,13 @@
       "settings": {
         "heading_accent": "See results",
         "heading": "in 3 simple steps",
+        "heading_size": "h1",
+        "heading_font_size": 0,
         "image_radius": 10,
         "accent_color": "#ec5f94",
         "background_color": "#ffffff",
         "padding_top": 60,
         "padding_bottom": 60
-      }
-    },
-    "rich_text_JVE9FN": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_xb38XR": {
-          "type": "heading",
-          "settings": {
-            "heading": "Real People, Real Results",
-            "heading_size": "h0"
-          }
-        }
-      },
-      "block_order": [
-        "heading_xb38XR"
-      ],
-      "custom_css": [],
-      "name": "t:sections.rich-text.presets.name",
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-2",
-        "full_width": true,
-        "padding_top": 80,
-        "padding_bottom": 0
-      }
-    },
-    "custom_liquid_cH7k4D": {
-      "type": "custom-liquid",
-      "custom_css": [
-        ".review-swiper {max-width: 1100px; padding: 20px;}",
-        ".swiper-pagination-bullet-active {background: #fa9eb2;}",
-        ".author-name {font-size: 12px;}",
-        ".verified-badge {font-size: 12px;}",
-        ".arrow-icon {position: absolute; width: 32px; height: 32px; margin: 4px;}"
-      ],
-      "name": "Reviews",
-      "settings": {
-        "custom_liquid": "<!-- Swiper CSS + JS -->\n<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css\">\n<script src=\"https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js\"></script>\n\n<div class=\"swiper review-swiper\">\n  <div class=\"swiper-wrapper\">\n\n    <div class=\"swiper-slide\">\n      <div class=\"review-card\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0951/2766/7027/files/11.jpg\" alt=\"review photo\" class=\"review-photo\">\n        <div class=\"review-stars\">⭐⭐⭐⭐⭐</div>\n        <h4 class=\"review-title\">Acne Marks Faded</h4>\n        <p class=\"review-text\">This mask helped fade my post-acne redness way more than any serum I’ve used. I use it every night while reading. After one month, my cheeks are clearer and tone is more even.</p>\n        <div class=\"review-author\">\n          <span class=\"author-name\">🇺🇸 — Jessica M.</span>\n          <span class=\"verified-badge\">✅ Verified customer</span>\n        </div>\n      </div>\n    </div>\n\n<div class=\"swiper-slide\">\n      <div class=\"review-card\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0951/2766/7027/files/14.jpg\" alt=\"review photo\" class=\"review-photo\">\n        <div class=\"review-stars\">⭐⭐⭐⭐⭐</div>\n        <h4 class=\"review-title\">Wrinkles Look Softer</h4>\n        <p class=\"review-text\">I’m 47, and my main issue was fine lines around the mouth and eyes. This mask made my skin look visibly smoother in three weeks. Friends noticed before I did.</p>\n        <div class=\"review-author\">\n          <span class=\"author-name\">🇺🇸 — Karen D.</span>\n          <span class=\"verified-badge\">✅ Verified customer</span>\n        </div>\n      </div>\n    </div>\n\n<div class=\"swiper-slide\">\n      <div class=\"review-card\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0951/2766/7027/files/18.jpg\" alt=\"review photo\" class=\"review-photo\">\n        <div class=\"review-stars\">⭐⭐⭐⭐⭐</div>\n        <h4 class=\"review-title\">No More Makeup Dependence</h4>\n        <p class=\"review-text\">For years I wore makeup to hide acne. Since using the Lunara mask, I finally feel comfortable bare-faced. My skin tone is smoother, and the bumps are gone.</p>\n        <div class=\"review-author\">\n          <span class=\"author-name\">🇺🇸 — Lindsey M.</span>\n          <span class=\"verified-badge\">✅ Verified customer</span>\n        </div>\n      </div>\n    </div>\n\n<div class=\"swiper-slide\">\n      <div class=\"review-card\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0951/2766/7027/files/12.jpg\" alt=\"review photo\" class=\"review-photo\">\n        <div class=\"review-stars\">⭐⭐⭐⭐⭐</div>\n        <h4 class=\"review-title\">Breakouts Under Control</h4>\n        <p class=\"review-text\">My hormonal acne has always flared up around my jawline — this mask changed that. After just two weeks, my breakouts slowed down and my skin feels calmer and clearer.</p>\n        <div class=\"review-author\">\n          <span class=\"author-name\">🇺🇸 — Ashley T.</span>\n          <span class=\"verified-badge\">✅ Verified customer</span>\n        </div>\n      </div>\n    </div>\n\n<div class=\"swiper-slide\">\n      <div class=\"review-card\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0951/2766/7027/files/13.jpg\" alt=\"review photo\" class=\"review-photo\">\n        <div class=\"review-stars\">⭐⭐⭐⭐⭐</div>\n        <h4 class=\"review-title\">From Inflamed to Calm</h4>\n        <p class=\"review-text\">I struggled with painful cystic acne and redness. This mask helped reduce the swelling and brought my skin back to a calm, even tone. It’s the only thing that’s worked long term.</p>\n        <div class=\"review-author\">\n          <span class=\"author-name\">🇺🇸 — Hailey J. </span>\n          <span class=\"verified-badge\">✅ Verified customer</span>\n        </div>\n      </div>\n    </div>\n\n<div class=\"swiper-slide\">\n      <div class=\"review-card\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0951/2766/7027/files/15.jpg\" alt=\"review photo\" class=\"review-photo\">\n        <div class=\"review-stars\">⭐⭐⭐⭐⭐</div>\n        <h4 class=\"review-title\">Less Oily, Fewer Pimples</h4>\n        <p class=\"review-text\">I used to wake up with new breakouts every morning. Now my skin feels balanced, not greasy, and breakouts are rare. Total game changer for me!</p>\n        <div class=\"review-author\">\n          <span class=\"author-name\">🇺🇸 — Nicole R.</span>\n          <span class=\"verified-badge\">✅ Verified customer</span>\n        </div>\n      </div>\n    </div>\n\n\n\n<div class=\"swiper-slide\">\n      <div class=\"review-card\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0951/2766/7027/files/16.jpg\" alt=\"review photo\" class=\"review-photo\">\n        <div class=\"review-stars\">⭐⭐⭐⭐⭐</div>\n        <h4 class=\"review-title\">Dry Skin Rejuvenated</h4>\n        <p class=\"review-text\">My skin is extremely dry and fine lines show easily. This LED mask made my skin feel deeply hydrated and more elastic. The dryness and creasing are almost gone.</p>\n        <div class=\"review-author\">\n          <span class=\"author-name\">🇺🇸 — Allison B.</span>\n          <span class=\"verified-badge\">✅ Verified customer</span>\n        </div>\n      </div>\n    </div>\n\n<div class=\"swiper-slide\">\n      <div class=\"review-card\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0951/2766/7027/files/17.jpg\" alt=\"review photo\" class=\"review-photo\">\n        <div class=\"review-stars\">⭐⭐⭐⭐⭐</div>\n        <h4 class=\"review-title\">Fast Results on Acne</h4>\n        <p class=\"review-text\">I saw improvement after just 4 sessions. The light calmed my skin right away, and breakouts reduced within the first week. I didn’t expect it to work this fast.</p>\n        <div class=\"review-author\">\n          <span class=\"author-name\">🇺🇸 — Emily G.</span>\n          <span class=\"verified-badge\">✅ Verified customer</span>\n        </div>\n      </div>\n    </div>\n\n\n\n<div class=\"swiper-slide\">\n      <div class=\"review-card\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0951/2766/7027/files/19.jpg\" alt=\"review photo\" class=\"review-photo\">\n        <div class=\"review-stars\">⭐⭐⭐⭐⭐</div>\n        <h4 class=\"review-title\">Pores Look Smaller</h4>\n        <p class=\"review-text\">My skin used to feel rough and look full of huge pores. This mask changed the texture dramatically — now it looks tighter and much smoother overall.</p>\n        <div class=\"review-author\">\n          <span class=\"author-name\">🇺🇸 — Rachel N. </span>\n          <span class=\"verified-badge\">✅ Verified customer</span>\n        </div>\n      </div>\n    </div>\n  \n\n  \n  </div>\n  <div class=\"swiper-button-prev custom-swiper-button\">\n    <img class=\"arrow-icon\" src=\"https://cdn.shopify.com/s/files/1/0951/2766/7027/files/Arrow-left.png\" alt=\"prev\" width=\"24\">\n  </div>\n  <div class=\"swiper-button-next custom-swiper-button\">\n    <img class=\"arrow-icon\" src=\"https://cdn.shopify.com/s/files/1/0951/2766/7027/files/Arrow-right.png\" alt=\"next\" width=\"24\">\n  </div>\n  <div class=\"swiper-pagination\"></div>\n</div>\n\n<style>\n.review-card {\n  border: 1px solid #ffdbe5;\n  border-radius: 16px;\n  padding: 16px;\n  text-align: left;\n  background: #fff;\n  margin-bottom: 20px;\n}\n.review-photo {\n  width: 100%;\n  height: auto;\n  border-radius: 6px;\n}\n.review-stars {\n  color: #FFD700;\n  font-size: 1.2rem;\n  margin-top: 8px;\n}\n.review-title {\n  font-weight: bold;\n  margin: 8px 0 4px;\n}\n.review-text {\n  font-size: 12px;\n  color: #333;\n  line-height: 155%;\n  letter-spacing: 0.1px;\n}\n.review-author {\n  margin-top: 10px;\n  font-size: 0.85rem;\n}\n.verified-badge {\n  color: green;\n  margin-left: 6px;\n}\n.review-swiper {\n  padding: 20px;\n  position: relative;\n}\n.swiper-slide {\n  width: 300px;\n}\n.custom-swiper-button {\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n  z-index: 10;\n  cursor: pointer;\n}\n.swiper-button-prev {\n  left: 0px;\n  color: transparent;\n}\n.swiper-button-next {\n  right: 0px;\n  color: transparent;\n}\n</style>\n\n<script>\n  document.addEventListener('DOMContentLoaded', function () {\n    new Swiper('.review-swiper', {\n      slidesPerView: 3,\n      spaceBetween: 20,\n      navigation: {\n        nextEl: '.swiper-button-next',\n        prevEl: '.swiper-button-prev'\n      },\n      pagination: {\n        el: '.swiper-pagination',\n        clickable: true\n      },\n      breakpoints: {\n        768: { slidesPerView: 3 },\n        480: { slidesPerView: 2 },\n        0: { slidesPerView: 1 }\n      }\n    });\n  });\n</script>",
-        "color_scheme": "scheme-2",
-        "padding_top": 40,
-        "padding_bottom": 40
       }
     },
     "reviews_slider_reFg8w": {
@@ -395,6 +355,8 @@
       "name": "Reviews Slider",
       "settings": {
         "heading": "What our customers say",
+        "heading_size": "h1",
+        "heading_font_size": 60,
         "background_color": "#ffffff",
         "card_border_color": "#ffdbe5",
         "card_radius": 16,
@@ -510,8 +472,6 @@
     "main",
     "custom_liquid_jwAVFn",
     "how_to_steps_qiAfxG",
-    "rich_text_JVE9FN",
-    "custom_liquid_cH7k4D",
     "reviews_slider_reFg8w",
     "rich_text_EjmYwB",
     "custom_liquid_TjtkNz",
