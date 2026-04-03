@@ -46,16 +46,16 @@
 
     <div class="swiper-button-prev custom-swiper-button">
       {%- if section.settings.arrow_prev != blank -%}
-        <img src="{{ section.settings.arrow_prev | image_url: width: 48 }}" alt="prev" width="24">
+        <img class="arrow-icon" src="{{ section.settings.arrow_prev | image_url: width: 48 }}" alt="prev" width="32" height="32">
       {%- else -%}
-        ‹
+        <img class="arrow-icon" src="https://cdn.shopify.com/s/files/1/0951/2766/7027/files/Arrow-left.png" alt="prev" width="32" height="32">
       {%- endif -%}
     </div>
     <div class="swiper-button-next custom-swiper-button">
       {%- if section.settings.arrow_next != blank -%}
-        <img src="{{ section.settings.arrow_next | image_url: width: 48 }}" alt="next" width="24">
+        <img class="arrow-icon" src="{{ section.settings.arrow_next | image_url: width: 48 }}" alt="next" width="32" height="32">
       {%- else -%}
-        ›
+        <img class="arrow-icon" src="https://cdn.shopify.com/s/files/1/0951/2766/7027/files/Arrow-right.png" alt="next" width="32" height="32">
       {%- endif -%}
     </div>
     <div class="swiper-pagination"></div>
