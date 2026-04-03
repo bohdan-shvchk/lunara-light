@@ -912,6 +912,15 @@
 
               {%- when 'icon-with-text' -%}
                 {% render 'icon-with-text', block: block %}
+              {%- when 'low_stock_alert' -%}
+                {%- if product.selected_or_first_available_variant.available and product.selected_or_first_available_variant.inventory_management == 'shopify' -%}
+                  {%- assign inventory = product.selected_or_first_available_variant.inventory_quantity -%}
+                  {%- if inventory > 0 and inventory <= block.settings.threshold -%}
+                    <p class="product__low-stock" style="font-weight: 500; color: {{ block.settings.color }}; font-size: {{ block.settings.font_size }}px;" {{ block.shopify_attributes }}>
+                      {{ block.settings.emoji }} {{ block.settings.prefix_text }} {{ inventory }} {{ block.settings.suffix_text }}
+                    </p>
+                  {%- endif -%}
+                {%- endif -%}
               {%- when 'rating_bar' -%}
                 <div class="product__rating-bar" style="display: flex; align-items: center; gap: 8px; font-size: 12px;" {{ block.shopify_attributes }}>
                   {%- if block.settings.stars_image != blank -%}
@@ -1723,6 +1732,55 @@
           "id": "enable_quick_add",
           "label": "t:sections.main-product.blocks.complementary_products.settings.enable_quick_add.label",
           "default": false
+        }
+      ]
+    },
+    {
+      "type": "low_stock_alert",
+      "name": "Low Stock Alert",
+      "settings": [
+        {
+          "type": "range",
+          "id": "threshold",
+          "min": 1,
+          "max": 50,
+          "step": 1,
+          "label": "Show when stock is below",
+          "default": 10
+        },
+        {
+          "type": "text",
+          "id": "emoji",
+          "label": "Emoji",
+          "default": "🔥"
+        },
+        {
+          "type": "text",
+          "id": "prefix_text",
+          "label": "Text before number",
+          "default": "Limited quantity! Only"
+        },
+        {
+          "type": "text",
+          "id": "suffix_text",
+          "label": "Text after number",
+          "default": "pieces left in stock"
+        },
+        {
+          "type": "color",
+          "id": "color",
+          "label": "Text color",
+          "default": "#dd0000"
+        },
+        {
+          "type": "range",
+          "id": "font_size",
+          "min": 12,
+          "max": 24,
+          "step": 1,
+          "unit": "px",
+          "label": "Font size",
+          "default": 16
         }
       ]
     },
