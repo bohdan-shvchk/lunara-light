@@ -43,7 +43,7 @@
         "low_stock_alert_eqTC9T": {
           "type": "low_stock_alert",
           "settings": {
-            "threshold": 10,
+            "threshold": 50,
             "emoji": "🔥",
             "prefix_text": "Limited quantity! Only",
             "suffix_text": "pieces left in stock",
