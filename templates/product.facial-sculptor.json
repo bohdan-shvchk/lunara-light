@@ -192,58 +192,6 @@
         "padding_bottom": 0
       }
     },
-    "press_logos_izGJ4m": {
-      "type": "press-logos",
-      "blocks": {
-        "logo_hxT8hM": {
-          "type": "logo",
-          "settings": {
-            "text": ""
-          }
-        },
-        "logo_yN9ji3": {
-          "type": "logo",
-          "settings": {
-            "text": ""
-          }
-        },
-        "logo_MV4KYm": {
-          "type": "logo",
-          "settings": {
-            "text": ""
-          }
-        },
-        "logo_rdkpbJ": {
-          "type": "logo",
-          "settings": {
-            "text": ""
-          }
-        }
-      },
-      "block_order": [
-        "logo_hxT8hM",
-        "logo_yN9ji3",
-        "logo_MV4KYm",
-        "logo_rdkpbJ"
-      ],
-      "name": "Press Logos",
-      "settings": {
-        "heading": "As seen in",
-        "background_color": "#ffdce5",
-        "padding_top": 40,
-        "padding_bottom": 40
-      }
-    },
-    "custom_liquid_tmEWzY": {
-      "type": "custom-liquid",
-      "name": "steps",
-      "settings": {
-        "custom_liquid": "{% if request.path == '/products/7-led-lifting-and-firming-facial-device' %}\n  <style>\n    .step-scroll {\n      display: flex;\n      gap: 60px;\n      overflow-x: auto;\n      scroll-snap-type: x mandatory;\n      -webkit-overflow-scrolling: touch;\n      padding-bottom: 10px;\n      scroll-padding-left: 20px;\n    }\n\n    .step-item {\n      flex: 0 0 auto;\n      width: 100%;\n      max-width: 380px;\n      scroll-snap-align: start;\n      text-align: center;\n    }\n\n    .step-image {\n      width: 100%;\n      height: 380px;\n      border-radius: 20px;\n      overflow: hidden;\n      background-color: #f0f0f0;\n      margin: 0 auto 20px;\n    }\n\n    .step-image img {\n      width: 100%;\n      height: 100%;\n      object-fit: cover;\n    }\n\n    .step-title {\n      font-size: 18px;\n      font-weight: 700;\n      margin-bottom: 10px;\n    }\n\n    .step-text {\n      font-size: 14px;\n      line-height: 1.6;\n      color: #333;\n    }\n\n    /* Центрування на desktop */\n    @media screen and (min-width: 769px) {\n      .step-scroll {\n        justify-content: center;\n        overflow-x: visible;\n      }\n    }\n  </style>\n\n  <div style=\"padding: 60px 20px; background-color: #fff; text-align: center;\">\n    <h2 style=\"font-size: 26px; font-weight: 600; margin-bottom: 40px;\">\n      <span style=\"color: #EC5F94; font-style: italic;\">See results</span> in 3 simple steps\n    </h2>\n\n    <div class=\"step-scroll\">\n      <!-- Step 1 -->\n      <div class=\"step-item\">\n        <div class=\"step-image\">\n          <img src=\"https://cdn.shopify.com/s/files/1/0951/2766/7027/files/step-1.webp\" alt=\"Step 1 Image\">\n        </div>\n        <h3 class=\"step-title\">Step 1: Prep Your Skin</h3>\n        <p class=\"step-text\">\n          Start with a clean face. Gently cleanse your skin and apply your favorite anti-aging serum we recommend pairing with our Hydrating Renewal Serum for optimal results, but you're welcome to use your own.\n        </p>\n      </div>\n\n      <!-- Step 2 -->\n      <div class=\"step-item\">\n        <div class=\"step-image\">\n          <img src=\"https://cdn.shopify.com/s/files/1/0951/2766/7027/files/step-2.webp\" alt=\"Step 2 Image\">\n        </div>\n        <h3 class=\"step-title\">Step 2: Activate & Customize</h3>\n        <p class=\"step-text\">\n          Hold the power button for 10 seconds until you hear a gentle hum this means your device is activated and ready. Select your preferred LED light therapy mode based on your skin goals: Red for anti-aging, green for fine lines & texture or all colors. Your personalized treatment awaits.\n        </p>\n      </div>\n\n      <!-- Step 3 -->\n      <div class=\"step-item\">\n        <div class=\"step-image\">\n          <img src=\"https://cdn.shopify.com/s/files/1/0951/2766/7027/files/step-3.webp\" alt=\"Step 3 Image\">\n        </div>\n        <h3 class=\"step-title\">Step 3: Glide & Glow</h3>\n        <p class=\"step-text\">\n          Slowly glide the LunaraLight across your face, jawline, and neck using gentle upward strokes. Let the EMS microcurrent and LED light therapy do the work lifting, toning and transforming your skin with every pass. Congrats you’re officially on your way to firmer, sculpted, radiant skin!\n        </p>\n      </div>\n    </div>\n  </div>\n{% endif %}",
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "how_to_steps_qiAfxG": {
       "type": "how-to-steps",
       "blocks": {
@@ -436,8 +384,6 @@
   "order": [
     "main",
     "custom_liquid_jwAVFn",
-    "press_logos_izGJ4m",
-    "custom_liquid_tmEWzY",
     "how_to_steps_qiAfxG",
     "rich_text_JVE9FN",
     "custom_liquid_cH7k4D",
