@@ -50,10 +50,6 @@
             "custom_liquid": "<script>\ndocument.addEventListener(\"DOMContentLoaded\", function() {\n  const priceEl = document.querySelector(\".price-item.price-item--regular\");\n  if (priceEl) {\n    const originalText = priceEl.textContent.trim();\n    const match = originalText.match(/([\\d.,]+)\\s*(\\D+)/);\n\n    if (match) {\n      const priceValue = parseFloat(match[1].replace(\",\", \".\"));\n      const currency = match[2].trim();\n\n      if (!isNaN(priceValue)) {\n        const doubledPrice = (priceValue * 2).toFixed(2).replace(\".\", \",\");\n        const strikeEl = document.createElement(\"span\");\n        strikeEl.style.textDecoration = \"line-through\";\n        strikeEl.style.marginLeft = \"8px\";\n        strikeEl.textContent = `${doubledPrice} ${currency}`;\n\n        priceEl.insertAdjacentElement(\"afterend\", strikeEl);\n      }\n    }\n  }\n});\n</script>"
           }
         },
-        "price_W4BKii": {
-          "type": "price",
-          "settings": {}
-        },
         "variant_picker_BNaGAm": {
           "type": "variant_picker",
           "settings": {
@@ -155,7 +151,6 @@
         "rating_bar_cxVKdQ",
         "low_stock_alert_eqTC9T",
         "custom_liquid_DWrMNX",
-        "price_W4BKii",
         "variant_picker_BNaGAm",
         "custom_liquid_PUyAyM",
         "bundle_save_YeJAWP",
