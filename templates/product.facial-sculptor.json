@@ -229,7 +229,7 @@
       "name": "Press Logos",
       "settings": {
         "heading": "As seen in",
-        "background_color": "#FFDCE5",
+        "background_color": "#ffdce5",
         "padding_top": 40,
         "padding_bottom": 40
       }
@@ -242,6 +242,49 @@
         "color_scheme": "",
         "padding_top": 0,
         "padding_bottom": 0
+      }
+    },
+    "how_to_steps_qiAfxG": {
+      "type": "how-to-steps",
+      "blocks": {
+        "step_BawGVQ": {
+          "type": "step",
+          "settings": {
+            "image": "shopify://shop_images/step-1.webp",
+            "title": "Step 1 — Title: Step 1: Prep Your Skin",
+            "text": "Text: Start with a clean face. Gently cleanse your skin and apply your favorite anti-aging serum we recommend pairing with our Hydrating Renewal Serum for optimal results, but you're welcome to use your own."
+          }
+        },
+        "step_PDFPd3": {
+          "type": "step",
+          "settings": {
+            "image": "shopify://shop_images/ssstik.io_kimmykfinds_1745169164311-ezgif.com-video-to-gif-converter_2.webp",
+            "title": "Step 1",
+            "text": ""
+          }
+        },
+        "step_cHjWDW": {
+          "type": "step",
+          "settings": {
+            "image": "shopify://shop_images/step-3.webp",
+            "title": "Step 1",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "step_BawGVQ",
+        "step_PDFPd3",
+        "step_cHjWDW"
+      ],
+      "name": "How To Steps",
+      "settings": {
+        "heading_accent": "See results",
+        "heading": "in 3 simple steps",
+        "accent_color": "#EC5F94",
+        "background_color": "#ffffff",
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     },
     "rich_text_JVE9FN": {
@@ -394,6 +437,7 @@
     "custom_liquid_jwAVFn",
     "press_logos_izGJ4m",
     "custom_liquid_tmEWzY",
+    "how_to_steps_qiAfxG",
     "rich_text_JVE9FN",
     "custom_liquid_cH7k4D",
     "rich_text_EjmYwB",
