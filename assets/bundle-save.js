@@ -41,17 +41,18 @@ class BundleSave {
 
   _getTierPrice(tier) {
     const base = this.product.price;
-    const compareAt = this.product.compare_at_price;
+    const firstVariant = this.product.variants.find(v => v.available) || this.product.variants[0];
+    const compareAt = firstVariant && firstVariant.compare_at_price > base ? firstVariant.compare_at_price : null;
     const pct = tier === 2
       ? parseFloat(this.settings.discount_2) || 0
       : tier === 3
         ? parseFloat(this.settings.discount_3) || 0
         : 0;
-    const discounted = Math.round(base * tier * (1 - pct / 100));
-    const original = base * tier;
-    const compareTotal = compareAt && compareAt > base ? compareAt * tier : null;
-    const totalSaved = compareTotal ? compareTotal - discounted : original - discounted;
-    return { discounted, original, compareTotal, pct, saved: totalSaved };
+    const priceTotal = base * tier;
+    const finalPrice = Math.round(priceTotal * (1 - pct / 100));
+    const compareTotal = compareAt ? compareAt * tier : null;
+    const extraSave = priceTotal - finalPrice;
+    return { finalPrice, priceTotal, compareTotal, pct, extraSave };
   }
 
   _getTierLabel(tier) {
@@ -92,7 +93,7 @@ class BundleSave {
   }
 
   _renderTier(tier) {
-    const { discounted, original, compareTotal, pct, saved } = this._getTierPrice(tier);
+    const { finalPrice, priceTotal, compareTotal, pct, extraSave } = this._getTierPrice(tier);
     const isSelected = this.selectedTier === tier;
     const isMostPopular = parseInt(this.settings.most_popular_tier) === tier;
 
@@ -102,11 +103,18 @@ class BundleSave {
 
     const compareColor = this.settings.compare_price_color || '#999';
     const compareSize = this.settings.compare_price_size || 13;
-    const compareSource = compareTotal || (pct > 0 ? original : null);
-    const compareHtml = compareSource
-      ? `<span class="bundle-tier__price-compare" style="color:${compareColor};font-size:${compareSize}px">${this._formatMoney(compareSource)}</span>` : '';
-    const saveHtml = saved > 0
-      ? `<span class="bundle-tier__price-save">Save ${this._formatMoney(saved)}</span>` : '';
+
+    // Row 1: compare_at_price × qty (crossed out), only if exists
+    const compareHtml = compareTotal
+      ? `<span class="bundle-tier__price-compare" style="color:${compareColor};font-size:${compareSize}px">${this._formatMoney(compareTotal)}</span>` : '';
+
+    // Row 2: price × qty (normal), only for tier 2 and 3
+    const priceTotalHtml = tier > 1
+      ? `<span class="bundle-tier__price-base" style="color:${compareColor};font-size:${compareSize}px">${this._formatMoney(priceTotal)}</span>` : '';
+
+    // Row 3: Extra save (green), only for tier 2 and 3
+    const saveHtml = tier > 1 && extraSave > 0
+      ? `<span class="bundle-tier__price-save">Extra save ${this._formatMoney(extraSave)}</span>` : '';
 
     const variantsHtml = this.hasVariants ? this._renderVariants(tier) : '';
 
@@ -120,8 +128,9 @@ class BundleSave {
             <p class="bundle-tier__subtitle">${this._getTierSubtitle(tier)}</p>
           </div>
           <div class="bundle-tier__price">
-            <span class="bundle-tier__price-current">${this._formatMoney(discounted)}</span>
             ${compareHtml}
+            ${priceTotalHtml}
+            <span class="bundle-tier__price-current">${this._formatMoney(finalPrice)}</span>
             ${saveHtml}
           </div>
         </div>
