@@ -226,7 +226,7 @@
         "heading_size": "h1",
         "heading_font_size": 20,
         "logo_width": 250,
-        "logo_height": 180,
+        "logo_height": 170,
         "background_color": "#ffdce5",
         "padding_top": 32,
         "padding_bottom": 32
@@ -270,7 +270,7 @@
         "heading_accent": "See results",
         "heading": "in 3 simple steps",
         "heading_size": "h1",
-        "heading_font_size": 0,
+        "heading_font_size": 40,
         "image_radius": 10,
         "accent_color": "#ec5f94",
         "background_color": "#ffffff",
