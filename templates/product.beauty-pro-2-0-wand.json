@@ -37,13 +37,6 @@
             "custom_liquid": "<div style=\"display: flex; align-items: center; gap: 8px; font-size: 12px;\">\n  <img src=\"https://cdn.shopify.com/s/files/1/0951/2766/7027/files/stars.svg\" alt=\"stars\" style=\"height: 20px;\">\n  <span><strong>(4.9)</strong> based on 686 Reviews</span>\n</div>"
           }
         },
-        "custom_liquid_AwdTXd": {
-          "type": "custom_liquid",
-          "name": "Limited quantity!",
-          "settings": {
-            "custom_liquid": "{% if product.selected_or_first_available_variant.available %}\n  {% assign inventory = product.selected_or_first_available_variant.inventory_quantity %}\n  {% if inventory > 0 %}\n    <p style=\"font-weight: 500; color: #d00; font-size: 16px;\">\n      Limited quantity! 🔥 only <strong>{{ inventory }}</strong> pieces left in stock\n    </p>\n  {% endif %}\n{% endif %}"
-          }
-        },
         "low_stock_alert_YKqyCd": {
           "type": "low_stock_alert",
           "settings": {
@@ -166,7 +159,6 @@
         "title",
         "custom_liquid_Rbbiii",
         "custom_liquid_3APMnM",
-        "custom_liquid_AwdTXd",
         "low_stock_alert_YKqyCd",
         "price_W4BKii",
         "custom_liquid_PUyAyM",
