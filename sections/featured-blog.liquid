@@ -75,7 +75,10 @@
                 show_image: section.settings.show_image,
                 show_date: section.settings.show_date,
                 show_author: section.settings.show_author,
-                show_excerpt: true
+                show_excerpt: true,
+                card_title_font_size: section.settings.card_title_font_size,
+                card_excerpt_font_size: section.settings.card_excerpt_font_size,
+                excerpt_lines: section.settings.excerpt_lines
               %}
             </li>
           {%- endfor -%}
@@ -215,7 +218,36 @@
     {
       "type": "header",
       "content": "t:sections.featured-blog.settings.text_header.content"
-    },            
+    },
+    {
+      "type": "range",
+      "id": "card_title_font_size",
+      "min": 12,
+      "max": 32,
+      "step": 1,
+      "default": 20,
+      "unit": "px",
+      "label": "Розмір шрифту заголовка"
+    },
+    {
+      "type": "range",
+      "id": "card_excerpt_font_size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "default": 14,
+      "unit": "px",
+      "label": "Розмір шрифту опису"
+    },
+    {
+      "type": "range",
+      "id": "excerpt_lines",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "default": 2,
+      "label": "Кількість рядків опису"
+    },
     {
       "type": "inline_richtext",
       "id": "heading",

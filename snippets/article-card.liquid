@@ -75,7 +75,7 @@
         {%- endif -%}
         <div class="card__content">
           <div class="card__information">
-            <h3 class="card__heading{% if show_excerpt %} h2{% endif %}">
+            <h3 class="card__heading{% if show_excerpt %} h2{% endif %}" style="{% if card_title_font_size %}font-size: {{ card_title_font_size }}px;{% endif %}">
               <a href="{{ article.url }}" class="full-unstyled-link">
                 {{ article.title | truncate: 50 | escape }}
               </a>
@@ -90,7 +90,7 @@
             </div>
             {%- if show_excerpt -%}
               {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
-                <p class="article-card__excerpt rte-width">
+                <p class="article-card__excerpt rte-width" style="{% if card_excerpt_font_size %}font-size: {{ card_excerpt_font_size }}px;{% endif %} {% if excerpt_lines %}--line-clamp: {{ excerpt_lines }};{% endif %} display: -webkit-box; -webkit-line-clamp: {{ excerpt_lines | default: 2 }}; -webkit-box-orient: vertical; overflow: hidden;">
                   {%- if article.excerpt.size > 0 -%}
                     {{ article.excerpt | strip_html | truncatewords: 30 }}
                   {%- else -%}
@@ -114,7 +114,7 @@
       </div>
       <div class="card__content">
         <div class="card__information">
-          <h3 class="card__heading{% if show_excerpt %} h2{% endif %}">
+          <h3 class="card__heading{% if show_excerpt %} h2{% endif %}" style="{% if card_title_font_size %}font-size: {{ card_title_font_size }}px;{% endif %}">
             <a href="{{ article.url }}" class="full-unstyled-link">
               {{ article.title | truncate: 50 | escape }}
             </a>
@@ -129,7 +129,7 @@
           </div>
           {%- if show_excerpt -%}
             {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
-              <p class="article-card__excerpt rte-width">
+              <p class="article-card__excerpt rte-width" style="{% if card_excerpt_font_size %}font-size: {{ card_excerpt_font_size }}px;{% endif %} {% if excerpt_lines %}--line-clamp: {{ excerpt_lines }};{% endif %} display: -webkit-box; -webkit-line-clamp: {{ excerpt_lines | default: 2 }}; -webkit-box-orient: vertical; overflow: hidden;">
                 {%- if article.excerpt.size > 0 -%}
                   {{ article.excerpt | strip_html | truncatewords: 30 }}
                 {%- else -%}
