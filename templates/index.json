@@ -396,7 +396,7 @@
         "columns_desktop": 4,
         "show_view_all": true,
         "show_image": true,
-        "show_date": true,
+        "show_date": false,
         "show_author": false,
         "color_scheme": "",
         "padding_top": 36,
