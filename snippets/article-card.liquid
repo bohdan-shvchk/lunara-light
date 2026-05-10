@@ -34,7 +34,7 @@
         {% if settings.blog_card_style == 'card' %} color-{{ settings.blog_card_color_scheme }} gradient{% endif %}
         {% if settings.blog_card_style == 'card' and media_height == nil and article.image == empty or show_image == false %} ratio{% endif %}
       "
-      style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
+      style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%; {% if card_border_color %}border: 1px solid {{ card_border_color }};{% endif %}"
     >
       <div
         class="card__inner {% if settings.blog_card_style == 'standard' %} color-{{ settings.blog_card_color_scheme }} gradient{% endif %}{% if article.image and show_image or settings.blog_card_style == 'standard' %} ratio{% endif %}"
@@ -75,7 +75,7 @@
         {%- endif -%}
         <div class="card__content">
           <div class="card__information">
-            <h3 class="card__heading{% if show_excerpt %} h2{% endif %}" style="{% if card_title_font_size %}font-size: {{ card_title_font_size }}px;{% endif %}">
+            <h3 class="card__heading{% if show_excerpt %} h2{% endif %}" style="{% if card_title_font_size %}font-size: {{ card_title_font_size }}px;{% endif %} {% if title_lines %}display: -webkit-box; -webkit-line-clamp: {{ title_lines }}; -webkit-box-orient: vertical; overflow: hidden;{% endif %}">
               <a href="{{ article.url }}" class="full-unstyled-link">
                 {{ article.title | truncate: 50 | escape }}
               </a>
@@ -114,7 +114,7 @@
       </div>
       <div class="card__content">
         <div class="card__information">
-          <h3 class="card__heading{% if show_excerpt %} h2{% endif %}" style="{% if card_title_font_size %}font-size: {{ card_title_font_size }}px;{% endif %}">
+          <h3 class="card__heading{% if show_excerpt %} h2{% endif %}" style="{% if card_title_font_size %}font-size: {{ card_title_font_size }}px;{% endif %} {% if title_lines %}display: -webkit-box; -webkit-line-clamp: {{ title_lines }}; -webkit-box-orient: vertical; overflow: hidden;{% endif %}">
             <a href="{{ article.url }}" class="full-unstyled-link">
               {{ article.title | truncate: 50 | escape }}
             </a>

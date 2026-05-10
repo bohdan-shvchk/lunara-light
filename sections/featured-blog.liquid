@@ -77,8 +77,10 @@
                 show_author: section.settings.show_author,
                 show_excerpt: true,
                 card_title_font_size: section.settings.card_title_font_size,
+                title_lines: section.settings.title_lines,
                 card_excerpt_font_size: section.settings.card_excerpt_font_size,
-                excerpt_lines: section.settings.excerpt_lines
+                excerpt_lines: section.settings.excerpt_lines,
+                card_border_color: section.settings.card_border_color
               %}
             </li>
           {%- endfor -%}
@@ -231,6 +233,15 @@
     },
     {
       "type": "range",
+      "id": "title_lines",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "default": 2,
+      "label": "Кількість рядків заголовка"
+    },
+    {
+      "type": "range",
       "id": "card_excerpt_font_size",
       "min": 12,
       "max": 24,
@@ -247,6 +258,12 @@
       "step": 1,
       "default": 2,
       "label": "Кількість рядків опису"
+    },
+    {
+      "type": "color",
+      "id": "card_border_color",
+      "label": "Колір обводки карточки",
+      "default": "#FFDBE5"
     },
     {
       "type": "inline_richtext",
