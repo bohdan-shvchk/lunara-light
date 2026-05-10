@@ -1,1 +1,417 @@
-{"sections":{"image_with_text_QRaGNt":{"type":"image-with-text","blocks":{"caption_xriUye":{"type":"caption","settings":{"caption":"⭐ 10,000+ Real Results","text_style":"caption-with-letter-spacing","text_size":"medium"}},"heading_bUKd6P":{"type":"heading","settings":{"heading":"LED + Microcurrent Lifting for Visible Firmness","heading_size":"h0"}},"text_iCQQVJ":{"type":"text","settings":{"text":"<p>Say goodbye to sagging — this device combines 7-colour LED with microcurrent tech to visibly lift and firm your skin in weeks, not months.<br\/><br\/><\/p><p>✔ Noticeable lift in 2–4 weeks of consistent use<\/p>","text_style":"body"}},"button_XHDjar":{"type":"button","settings":{"button_label":"SHOP NOW","button_link":"shopify:\/\/collections\/all","button_style_secondary":false}}},"block_order":["caption_xriUye","heading_bUKd6P","text_iCQQVJ","button_XHDjar"],"custom_css":["h2 {font-size: 44px; letter-spacing: -0.5px;}",".rte {letter-spacing: -0.5px;}",".button {width: 260px; height: 60px; background: FFDCE5; font-weight: 600; letter-spacing: -0.1px;}"],"settings":{"image":"shopify:\/\/shop_images\/Face_and_beauty.jpg","height":"adapt","desktop_image_width":"medium","layout":"text_first","image_behavior":"none","content_layout":"no-overlap","desktop_content_position":"middle","desktop_content_alignment":"left","mobile_content_alignment":"left","section_color_scheme":"","color_scheme":"","padding_top":0,"padding_bottom":0}},"custom_liquid_nfgGrh":{"type":"custom-liquid","name":"Brand logos","settings":{"custom_liquid":"<style>\n  @media screen and (min-width: 769px) {\n    .logos-row {\n      justify-content: center !important;\n    }\n  }\n<\/style>\n\n<div style=\"background-color: #FFDCE5; padding: 40px 0;\">\n  <div class=\"logos-row\" style=\"\n    display: flex;\n    overflow-x: auto;\n    gap: 60px;\n    padding: 0 40px;\n    scroll-padding-left: 40px;\n    -webkit-overflow-scrolling: touch;\n  \">\n\n    {% assign logos = \n      \"allure.webp,\n      marie_daire.webp,\n      vogue.webp,\n      elle.webp\" | split: \",\" %}\n\n    {% for logo in logos %}\n      <div style=\"\n        flex: 0 0 auto;\n        width: 240px;\n        text-align: center;\n        scroll-snap-align: start;\n      \">\n        <div style=\"\n          width: 100%;\n          height: 0;\n          padding-top: 35%;\n          position: relative;\n        \">\n          <img \n            src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0951\/2766\/7027\/files\/{{ logo | strip }}\" \n            alt=\"logo\" \n            style=\"\n              position: absolute;\n              top: 0;\n              left: 0;\n              width: 100%;\n              height: 100%;\n              object-fit: cover;\n            \" \n          \/>\n        <\/div>\n        <p style=\"font-size: 12px; line-height: 1.5; color: #000; margin-top: 20px; font-weight: 300;\">\n          {{ texts[forloop.index0] | strip }}\n        <\/p>\n      <\/div>\n    {% endfor %}\n  <\/div>\n<\/div>","color_scheme":"","padding_top":0,"padding_bottom":0}},"multicolumn_FaTbGf":{"type":"multicolumn","blocks":{"column_nbHkY7":{"type":"column","settings":{"title":"<strong>Proven by Experts<\/strong>","text":"<p>Tested by professionals. Trusted for real, visible results.<\/p>","link_label":"","link":""}},"column_XEkCrq":{"type":"column","settings":{"title":"<strong>Effortless Home Use<\/strong>","text":"<p>Simple, safe, and hands-free. Use it anytime, no setup.<\/p>","link_label":"","link":""}},"column_j4Q4Wf":{"type":"column","settings":{"title":"<strong>Saves You Time & Money<\/strong>","text":"<p>Skip salons — get pro-level results from home, whenever you want.<\/p>","link_label":"","link":""}},"column_4U7ibe":{"type":"column","settings":{"title":"<strong>Treats All Skin Needs<\/strong>","text":"<p>Tackles wrinkles, acne, dullness, and uneven tone in one routine.<\/p>","link_label":"","link":""}}},"block_order":["column_nbHkY7","column_XEkCrq","column_j4Q4Wf","column_4U7ibe"],"disabled":true,"custom_css":[".rte {font-size: 12px; letter-spacing: 0.1px; line-height: 150%;}",".content-container {border-radius: 8px; background: #fff; border-color: #ffdbe5; border-width: 1px; border-style: solid;}",".inline-richtext {font-size: 14px;}",".multicolumn-card__info {padding: 1.5rem;}",".multicolumn {background-color: #fff7f9;}"],"settings":{"title":"","heading_size":"h1","image_width":"full","image_ratio":"adapt","button_label":"","button_link":"","columns_desktop":4,"column_alignment":"left","background_style":"primary","color_scheme":"","columns_mobile":"2","swipe_on_mobile":false,"padding_top":24,"padding_bottom":24}},"featured_collection_TyrRjP":{"type":"featured-collection","custom_css":["h2 {font-size: 44px; letter-spacing: -0.5px;}",".button {margin-top: 40px; width: 240px; height: 54px; background: FFDCE5; font-weight: 500; letter-spacing: -0.1px;}"],"settings":{"collection":"led-therapy","products_to_show":4,"title":"Products on sale","heading_size":"h1","description":"","show_description":false,"description_style":"body","columns_desktop":4,"enable_desktop_slider":false,"full_width":false,"show_view_all":false,"view_all_style":"solid","color_scheme":"scheme-1","image_ratio":"adapt","image_shape":"default","show_secondary_image":false,"show_vendor":false,"show_rating":false,"quick_add":"none","columns_mobile":"1","swipe_on_mobile":false,"padding_top":36,"padding_bottom":36}},"rich_text_cjgD8e":{"type":"rich-text","blocks":{"heading_RhiBit":{"type":"heading","settings":{"heading":"Why Customers Trust Lunara Light","heading_size":"h0"}},"text_rQa9mq":{"type":"text","settings":{"text":""}}},"block_order":["heading_RhiBit","text_rQa9mq"],"name":"t:sections.rich-text.presets.name","settings":{"desktop_content_position":"center","content_alignment":"center","color_scheme":"","full_width":true,"padding_top":80,"padding_bottom":0}},"custom_liquid_fXMdD4":{"type":"custom-liquid","custom_css":[".review-swiper {max-width: 1100px; padding: 20px;}",".swiper-pagination-bullet-active {background: #fa9eb2;}",".author-name {font-size: 12px;}",".verified-badge {font-size: 12px;}",".arrow-icon {position: absolute; width: 32px; height: 32px; margin: 4px;}"],"name":"review-slider ","settings":{"custom_liquid":"<!-- Swiper CSS + JS -->\n<link rel=\"stylesheet\" href=\"https:\/\/cdn.jsdelivr.net\/npm\/swiper@11\/swiper-bundle.min.css\">\n<script src=\"https:\/\/cdn.jsdelivr.net\/npm\/swiper@11\/swiper-bundle.min.js\"><\/script>\n\n<div class=\"swiper review-swiper\">\n  <div class=\"swiper-wrapper\">\n\n    <div class=\"swiper-slide\">\n      <div class=\"review-card\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0951\/2766\/7027\/files\/11.jpg\" alt=\"review photo\" class=\"review-photo\">\n        <div class=\"review-stars\">⭐⭐⭐⭐⭐<\/div>\n        <h4 class=\"review-title\">Acne Marks Faded<\/h4>\n        <p class=\"review-text\">This mask helped fade my post-acne redness way more than any serum I’ve used. I use it every night while reading. After one month, my cheeks are clearer and tone is more even.<\/p>\n        <div class=\"review-author\">\n          <span class=\"author-name\">🇺🇸 — Jessica M.<\/span>\n          <span class=\"verified-badge\">✅ Verified customer<\/span>\n        <\/div>\n      <\/div>\n    <\/div>\n\n<div class=\"swiper-slide\">\n      <div class=\"review-card\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0951\/2766\/7027\/files\/14.jpg\" alt=\"review photo\" class=\"review-photo\">\n        <div class=\"review-stars\">⭐⭐⭐⭐⭐<\/div>\n        <h4 class=\"review-title\">Wrinkles Look Softer<\/h4>\n        <p class=\"review-text\">I’m 47, and my main issue was fine lines around the mouth and eyes. This mask made my skin look visibly smoother in three weeks. Friends noticed before I did.<\/p>\n        <div class=\"review-author\">\n          <span class=\"author-name\">🇺🇸 — Karen D.<\/span>\n          <span class=\"verified-badge\">✅ Verified customer<\/span>\n        <\/div>\n      <\/div>\n    <\/div>\n\n<div class=\"swiper-slide\">\n      <div class=\"review-card\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0951\/2766\/7027\/files\/18.jpg\" alt=\"review photo\" class=\"review-photo\">\n        <div class=\"review-stars\">⭐⭐⭐⭐⭐<\/div>\n        <h4 class=\"review-title\">No More Makeup Dependence<\/h4>\n        <p class=\"review-text\">For years I wore makeup to hide acne. Since using the Lunara mask, I finally feel comfortable bare-faced. My skin tone is smoother, and the bumps are gone.<\/p>\n        <div class=\"review-author\">\n          <span class=\"author-name\">🇺🇸 — Lindsey M.<\/span>\n          <span class=\"verified-badge\">✅ Verified customer<\/span>\n        <\/div>\n      <\/div>\n    <\/div>\n\n<div class=\"swiper-slide\">\n      <div class=\"review-card\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0951\/2766\/7027\/files\/12.jpg\" alt=\"review photo\" class=\"review-photo\">\n        <div class=\"review-stars\">⭐⭐⭐⭐⭐<\/div>\n        <h4 class=\"review-title\">Breakouts Under Control<\/h4>\n        <p class=\"review-text\">My hormonal acne has always flared up around my jawline — this mask changed that. After just two weeks, my breakouts slowed down and my skin feels calmer and clearer.<\/p>\n        <div class=\"review-author\">\n          <span class=\"author-name\">🇺🇸 — Ashley T.<\/span>\n          <span class=\"verified-badge\">✅ Verified customer<\/span>\n        <\/div>\n      <\/div>\n    <\/div>\n\n<div class=\"swiper-slide\">\n      <div class=\"review-card\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0951\/2766\/7027\/files\/13.jpg\" alt=\"review photo\" class=\"review-photo\">\n        <div class=\"review-stars\">⭐⭐⭐⭐⭐<\/div>\n        <h4 class=\"review-title\">From Inflamed to Calm<\/h4>\n        <p class=\"review-text\">I struggled with painful cystic acne and redness. This mask helped reduce the swelling and brought my skin back to a calm, even tone. It’s the only thing that’s worked long term.<\/p>\n        <div class=\"review-author\">\n          <span class=\"author-name\">🇺🇸 — Hailey J. <\/span>\n          <span class=\"verified-badge\">✅ Verified customer<\/span>\n        <\/div>\n      <\/div>\n    <\/div>\n\n<div class=\"swiper-slide\">\n      <div class=\"review-card\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0951\/2766\/7027\/files\/15.jpg\" alt=\"review photo\" class=\"review-photo\">\n        <div class=\"review-stars\">⭐⭐⭐⭐⭐<\/div>\n        <h4 class=\"review-title\">Less Oily, Fewer Pimples<\/h4>\n        <p class=\"review-text\">I used to wake up with new breakouts every morning. Now my skin feels balanced, not greasy, and breakouts are rare. Total game changer for me!<\/p>\n        <div class=\"review-author\">\n          <span class=\"author-name\">🇺🇸 — Nicole R.<\/span>\n          <span class=\"verified-badge\">✅ Verified customer<\/span>\n        <\/div>\n      <\/div>\n    <\/div>\n\n\n\n<div class=\"swiper-slide\">\n      <div class=\"review-card\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0951\/2766\/7027\/files\/16.jpg\" alt=\"review photo\" class=\"review-photo\">\n        <div class=\"review-stars\">⭐⭐⭐⭐⭐<\/div>\n        <h4 class=\"review-title\">Dry Skin Rejuvenated<\/h4>\n        <p class=\"review-text\">My skin is extremely dry and fine lines show easily. This LED mask made my skin feel deeply hydrated and more elastic. The dryness and creasing are almost gone.<\/p>\n        <div class=\"review-author\">\n          <span class=\"author-name\">🇺🇸 — Allison B.<\/span>\n          <span class=\"verified-badge\">✅ Verified customer<\/span>\n        <\/div>\n      <\/div>\n    <\/div>\n\n<div class=\"swiper-slide\">\n      <div class=\"review-card\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0951\/2766\/7027\/files\/17.jpg\" alt=\"review photo\" class=\"review-photo\">\n        <div class=\"review-stars\">⭐⭐⭐⭐⭐<\/div>\n        <h4 class=\"review-title\">Fast Results on Acne<\/h4>\n        <p class=\"review-text\">I saw improvement after just 4 sessions. The light calmed my skin right away, and breakouts reduced within the first week. I didn’t expect it to work this fast.<\/p>\n        <div class=\"review-author\">\n          <span class=\"author-name\">🇺🇸 — Emily G.<\/span>\n          <span class=\"verified-badge\">✅ Verified customer<\/span>\n        <\/div>\n      <\/div>\n    <\/div>\n\n\n\n<div class=\"swiper-slide\">\n      <div class=\"review-card\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0951\/2766\/7027\/files\/19.jpg\" alt=\"review photo\" class=\"review-photo\">\n        <div class=\"review-stars\">⭐⭐⭐⭐⭐<\/div>\n        <h4 class=\"review-title\">Pores Look Smaller<\/h4>\n        <p class=\"review-text\">My skin used to feel rough and look full of huge pores. This mask changed the texture dramatically — now it looks tighter and much smoother overall.<\/p>\n        <div class=\"review-author\">\n          <span class=\"author-name\">🇺🇸 — Rachel N. <\/span>\n          <span class=\"verified-badge\">✅ Verified customer<\/span>\n        <\/div>\n      <\/div>\n    <\/div>\n  \n\n  \n  <\/div>\n  <div class=\"swiper-button-prev custom-swiper-button\">\n    <img class=\"arrow-icon\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0951\/2766\/7027\/files\/Arrow-left.png\" alt=\"prev\" width=\"24\">\n  <\/div>\n  <div class=\"swiper-button-next custom-swiper-button\">\n    <img class=\"arrow-icon\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0951\/2766\/7027\/files\/Arrow-right.png\" alt=\"next\" width=\"24\">\n  <\/div>\n  <div class=\"swiper-pagination\"><\/div>\n<\/div>\n\n<style>\n.review-card {\n  border: 1px solid #ffdbe5;\n  border-radius: 16px;\n  padding: 16px;\n  text-align: left;\n  background: #fff;\n  margin-bottom: 20px;\n}\n.review-photo {\n  width: 100%;\n  height: auto;\n  border-radius: 6px;\n}\n.review-stars {\n  color: #FFD700;\n  font-size: 1.2rem;\n  margin-top: 8px;\n}\n.review-title {\n  font-weight: bold;\n  margin: 8px 0 4px;\n}\n.review-text {\n  font-size: 12px;\n  color: #333;\n  line-height: 155%;\n  letter-spacing: 0.1px;\n}\n.review-author {\n  margin-top: 10px;\n  font-size: 0.85rem;\n}\n.verified-badge {\n  color: green;\n  margin-left: 6px;\n}\n.review-swiper {\n  padding: 20px;\n  position: relative;\n}\n.swiper-slide {\n  width: 300px;\n}\n.custom-swiper-button {\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n  z-index: 10;\n  cursor: pointer;\n}\n.swiper-button-prev {\n  left: 0px;\n  color: transparent;\n}\n.swiper-button-next {\n  right: 0px;\n  color: transparent;\n}\n<\/style>\n\n<script>\n  document.addEventListener('DOMContentLoaded', function () {\n    new Swiper('.review-swiper', {\n      slidesPerView: 3,\n      spaceBetween: 20,\n      navigation: {\n        nextEl: '.swiper-button-next',\n        prevEl: '.swiper-button-prev'\n      },\n      pagination: {\n        el: '.swiper-pagination',\n        clickable: true\n      },\n      breakpoints: {\n        768: { slidesPerView: 3 },\n        480: { slidesPerView: 2 },\n        0: { slidesPerView: 1 }\n      }\n    });\n  });\n<\/script>","color_scheme":"","padding_top":0,"padding_bottom":60}},"custom_liquid_RjaDkw":{"type":"custom-liquid","disabled":true,"custom_css":[".review-quote {margin: 12px;}"],"name":"`video","settings":{"custom_liquid":"<div class=\"doctor-review-container\">\n  <div class=\"doctor-review-wrapper\">\n    <div class=\"doctor-review-image\">\n      <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0951\/2766\/7027\/files\/maxresdefault_1.jpg\" alt=\"Dr Shah\" class=\"review-thumbnail\" onclick=\"openVideoPopup()\">\n      <button class=\"play-button\" onclick=\"openVideoPopup()\">▶<\/button>\n    <\/div>\n    <div class=\"doctor-review-text\">\n      <div class=\"review-badge\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0951\/2766\/7027\/files\/trust.svg\" alt=\"trust icon\" class=\"badge-icon\">\n        TRUSTED AND RECOMMENDED BY LEADING SKINCARE PROFESSIONALS\n      <\/div>\n      <blockquote class=\"review-quote\">\n        \"<strong>The most advanced LED mask<\/strong> I’ve tested recently. Just remember — consistency is everything <strong>if you want real results.<\/strong>\"\n      <\/blockquote>\n    <\/div>\n  <\/div>\n\n  <div id=\"videoPopup\" class=\"popup-overlay\" onclick=\"closeVideoPopup()\">\n    <div class=\"popup-content\" onclick=\"event.stopPropagation()\">\n      <button class=\"close-popup\" onclick=\"closeVideoPopup()\">&times;<\/button>\n      <iframe width=\"100%\" height=\"100%\" src=\"https:\/\/www.youtube.com\/embed\/I2Fe-kP-2Jg\" frameborder=\"0\" allowfullscreen><\/iframe>\n    <\/div>\n  <\/div>\n<\/div>\n\n<style>\n.doctor-review-container {\n  max-width: 1100px;\n  margin: 0 auto;\n  padding: 16px;\n}\n.doctor-review-wrapper {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 60px;\n  align-items: center;\n  flex-direction: row;\n}\n.doctor-review-image {\n  position: relative;\n  flex: 0 0 auto;\n  width: 100%;\n  max-width: 430px;\n}\n.review-thumbnail {\n  width: 100%;\n  border-radius: 24px;\n  cursor: pointer;\n  height: 400px;\n}\n.play-button {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  background: white;\n  border: none;\n  font-size: 28px;\n  width: 48px;\n  height: 48px;\n  border-radius: 50%;\n  cursor: pointer;\n  box-shadow: 0 2px 6px rgba(0,0,0,0.2);\n}\n.doctor-review-text {\n  flex: 1;\n  min-width: 250px;\n}\n.review-badge {\n  background: #FFF7F9;\n  padding: 12px 20px;\n  border-radius: 40px;\n  display: inline-flex;\n  align-items: center;\n  gap: 10px;\n  margin-bottom: 24px;\n  font-size: 14px;\n  font-weight: 600;\n  border: 2px solid #FA9EB2;\n}\n.badge-icon {\n  width: 24px;\n  height: 24px;\n}\n.review-quote {\n  font-size: 28px;\n  line-height: 1.4;\n  font-family: Georgia, serif;\n}\n.popup-overlay {\n  display: none;\n  position: fixed;\n  top: 0; left: 0; right: 0; bottom: 0;\n  background: rgba(0, 0, 0, 0.7);\n  justify-content: center;\n  align-items: center;\n  z-index: 1000;\n}\n.popup-overlay.active {\n  display: flex;\n}\n.popup-content {\n  background: #000;\n  width: 90%;\n  max-width: 800px;\n  aspect-ratio: 16 \/ 9;\n  position: relative;\n  border-radius: 10px;\n  overflow: hidden;\n}\n.close-popup {\n  position: absolute;\n  top: 8px;\n  right: 12px;\n  background: none;\n  border: none;\n  font-size: 28px;\n  color: white;\n  cursor: pointer;\n}\n\n@media (max-width: 768px) {\n  .doctor-review-wrapper {\n    flex-direction: column-reverse;\n    gap: 24px;\n  }\n  .doctor-review-image {\n    max-width: 100%;\n  }\n}\n@media (max-width: 768px) {\n  .doctor-review-wrapper {\n    flex-direction: column;\n    gap: 24px;\n  }\n.review-thumbnail {\n  height: auto;\n}\n<\/style>\n\n<script>\nfunction openVideoPopup() {\n  document.getElementById(\"videoPopup\").classList.add(\"active\");\n}\nfunction closeVideoPopup() {\n  document.getElementById(\"videoPopup\").classList.remove(\"active\");\n}\n<\/script>","color_scheme":"","padding_top":40,"padding_bottom":52}},"collection_list_X8YLT8":{"type":"collection-list","blocks":{"featured_collection_fW69wj":{"type":"featured_collection","settings":{"collection":"led-therapy"}},"featured_collection_pzp78N":{"type":"featured_collection","settings":{"collection":"health-comfort"}},"featured_collection_xhyMTh":{"type":"featured_collection","settings":{"collection":"for-woman"}}},"block_order":["featured_collection_fW69wj","featured_collection_pzp78N","featured_collection_xhyMTh"],"name":"t:sections.collection-list.presets.name","settings":{"title":"Shop By Category","heading_size":"h0","image_ratio":"square","columns_desktop":3,"color_scheme":"scheme-2","show_view_all":false,"columns_mobile":"1","swipe_on_mobile":false,"padding_top":36,"padding_bottom":36}},"collapsible_content_FVKzGc":{"type":"collapsible-content","blocks":{"collapsible_row_7KTAEk":{"type":"collapsible_row","settings":{"heading":"Is LED light therapy safe to use at home?","icon":"check_mark","row_content":"<p>Yes. All Lunara Light devices use clinically studied wavelengths that are non-invasive, UV-free, and safe for daily use.<\/p>","page":""}},"collapsible_row_eLz64h":{"type":"collapsible_row","settings":{"heading":"How long should I use the device each session?","icon":"check_mark","row_content":"<p>Recommended use is 15–20 minutes per session. Most users see results with consistent daily use.<\/p>","page":""}},"collapsible_row_QY48LM":{"type":"collapsible_row","settings":{"heading":"When will I start seeing results?","icon":"check_mark","row_content":"<p>Visible improvements typically appear within 2–4 weeks of regular use, depending on skin type and concern.<\/p>","page":""}},"collapsible_row_eGzhqq":{"type":"collapsible_row","settings":{"heading":"Can I use it with skincare products?","icon":"check_mark","row_content":"<p>Yes. LED therapy enhances the absorption of serums and creams. Apply after cleansing and before the session.<\/p>","page":""}},"collapsible_row_Fh4rzF":{"type":"collapsible_row","settings":{"heading":"Does it work for all skin types?","icon":"check_mark","row_content":"<p>Absolutely. Lunara Light is designed for all skin tones and types, including sensitive skin.<\/p>","page":""}},"collapsible_row_bLiqcH":{"type":"collapsible_row","settings":{"heading":"Is it painful or uncomfortable?","icon":"check_mark","row_content":"<p>No. The treatment is completely painless and does not cause irritation or downtime.<\/p>","page":""}}},"block_order":["collapsible_row_7KTAEk","collapsible_row_eLz64h","collapsible_row_QY48LM","collapsible_row_eGzhqq","collapsible_row_Fh4rzF","collapsible_row_bLiqcH"],"custom_css":["h2 {font-size: 44px; letter-spacing: -0.5px;}",".rte {font-size: 14px; letter-spacing: 0.1px; line-height: 160%;}"],"settings":{"caption":"","heading":"Frequently Asked Questions","heading_size":"h0","heading_alignment":"center","layout":"none","container_color_scheme":"","color_scheme":"","open_first_collapsible_row":false,"image_ratio":"adapt","desktop_layout":"image_second","padding_top":36,"padding_bottom":36}},"custom_liquid_4bKmci":{"type":"custom-liquid","disabled":true,"name":"reviews","settings":{"custom_liquid":"<div class=\"masonry-container\">\n  <div class=\"masonry-col col-1\">\n    <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0951\/2766\/7027\/files\/review-1.png\" alt=\"\">\n    <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0951\/2766\/7027\/files\/review-5.png\" alt=\"\">\n    <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0951\/2766\/7027\/files\/review-9.jpg\" alt=\"\">\n  <\/div>\n  <div class=\"masonry-col col-2\">\n    <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0951\/2766\/7027\/files\/review-2.png\" alt=\"\">\n    <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0951\/2766\/7027\/files\/review-6.png\" alt=\"\">\n    <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0951\/2766\/7027\/files\/review-10.png\" alt=\"\">\n  <\/div>\n  <div class=\"masonry-col col-3 mobile-hide\">\n    <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0951\/2766\/7027\/files\/review-3.png\" alt=\"\">\n    <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0951\/2766\/7027\/files\/review-7.png\" alt=\"\">\n    <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0951\/2766\/7027\/files\/review-11.png\" alt=\"\">\n  <\/div>\n  <div class=\"masonry-col col-4 mobile-hide\">\n    <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0951\/2766\/7027\/files\/review-4.png\" alt=\"\">\n    <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0951\/2766\/7027\/files\/review-8.png\" alt=\"\">\n    <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0951\/2766\/7027\/files\/review-12.png\" alt=\"\">\n  <\/div>\n<\/div>\n\n<style>\n.masonry-container {\n  display: flex;\n  justify-content: center;\n  max-width: 1100px;\n  margin: 0 auto;\n  gap: 16px;\n  flex-wrap: wrap;\n}\n.masonry-col {\n  display: flex;\n  flex-direction: column;\n  gap: 16px;\n  flex: 1;\n}\n.masonry-col img {\n  width: 100%;\n  height: auto;\n  display: block;\n}\n@media (max-width: 767px) {\n  .mobile-hide {\n    display: none;\n  }\n  .masonry-container {\n    padding-left: 16px;\n    padding-right: 16px;\n    gap: 16px;\n  }\n  .col-1, .col-2 {\n    width: calc(50% - 8px);\n  }\n}\n<\/style>","color_scheme":"","padding_top":40,"padding_bottom":52}}},"order":["image_with_text_QRaGNt","custom_liquid_nfgGrh","multicolumn_FaTbGf","featured_collection_TyrRjP","rich_text_cjgD8e","custom_liquid_fXMdD4","custom_liquid_RjaDkw","collection_list_X8YLT8","collapsible_content_FVKzGc","custom_liquid_4bKmci"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_with_text_QRaGNt": {
+      "type": "image-with-text",
+      "blocks": {
+        "caption_xriUye": {
+          "type": "caption",
+          "settings": {
+            "caption": "⭐ 10,000+ Real Results",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "heading_bUKd6P": {
+          "type": "heading",
+          "settings": {
+            "heading": "LED + Microcurrent Lifting for Visible Firmness",
+            "heading_size": "h0"
+          }
+        },
+        "text_iCQQVJ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Say goodbye to sagging — this device combines 7-colour LED with microcurrent tech to visibly lift and firm your skin in weeks, not months.<br/><br/></p><p>✔ Noticeable lift in 2–4 weeks of consistent use</p>",
+            "text_style": "body"
+          }
+        },
+        "button_XHDjar": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP NOW",
+            "button_link": "shopify://collections/all",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "caption_xriUye",
+        "heading_bUKd6P",
+        "text_iCQQVJ",
+        "button_XHDjar"
+      ],
+      "custom_css": [
+        "h2 {font-size: 44px; letter-spacing: -0.5px;}",
+        ".rte {letter-spacing: -0.5px;}",
+        ".button {width: 260px; height: 60px; background: FFDCE5; font-weight: 600; letter-spacing: -0.1px;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Face_and_beauty.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "custom_liquid_nfgGrh": {
+      "type": "custom-liquid",
+      "name": "Brand logos",
+      "settings": {
+        "custom_liquid": "<style>\n  @media screen and (min-width: 769px) {\n    .logos-row {\n      justify-content: center !important;\n    }\n  }\n</style>\n\n<div style=\"background-color: #FFDCE5; padding: 40px 0;\">\n  <div class=\"logos-row\" style=\"\n    display: flex;\n    overflow-x: auto;\n    gap: 60px;\n    padding: 0 40px;\n    scroll-padding-left: 40px;\n    -webkit-overflow-scrolling: touch;\n  \">\n\n    {% assign logos = \n      \"allure.webp,\n      marie_daire.webp,\n      vogue.webp,\n      elle.webp\" | split: \",\" %}\n\n    {% for logo in logos %}\n      <div style=\"\n        flex: 0 0 auto;\n        width: 240px;\n        text-align: center;\n        scroll-snap-align: start;\n      \">\n        <div style=\"\n          width: 100%;\n          height: 0;\n          padding-top: 35%;\n          position: relative;\n        \">\n          <img \n            src=\"https://cdn.shopify.com/s/files/1/0951/2766/7027/files/{{ logo | strip }}\" \n            alt=\"logo\" \n            style=\"\n              position: absolute;\n              top: 0;\n              left: 0;\n              width: 100%;\n              height: 100%;\n              object-fit: cover;\n            \" \n          />\n        </div>\n        <p style=\"font-size: 12px; line-height: 1.5; color: #000; margin-top: 20px; font-weight: 300;\">\n          {{ texts[forloop.index0] | strip }}\n        </p>\n      </div>\n    {% endfor %}\n  </div>\n</div>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "multicolumn_FaTbGf": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_nbHkY7": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Proven by Experts</strong>",
+            "text": "<p>Tested by professionals. Trusted for real, visible results.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_XEkCrq": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Effortless Home Use</strong>",
+            "text": "<p>Simple, safe, and hands-free. Use it anytime, no setup.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_j4Q4Wf": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Saves You Time & Money</strong>",
+            "text": "<p>Skip salons — get pro-level results from home, whenever you want.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_4U7ibe": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Treats All Skin Needs</strong>",
+            "text": "<p>Tackles wrinkles, acne, dullness, and uneven tone in one routine.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_nbHkY7",
+        "column_XEkCrq",
+        "column_j4Q4Wf",
+        "column_4U7ibe"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".rte {font-size: 12px; letter-spacing: 0.1px; line-height: 150%;}",
+        ".content-container {border-radius: 8px; background: #fff; border-color: #ffdbe5; border-width: 1px; border-style: solid;}",
+        ".inline-richtext {font-size: 14px;}",
+        ".multicolumn-card__info {padding: 1.5rem;}",
+        ".multicolumn {background-color: #fff7f9;}"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "featured_collection_TyrRjP": {
+      "type": "featured-collection",
+      "custom_css": [
+        "h2 {font-size: 44px; letter-spacing: -0.5px;}",
+        ".button {margin-top: 40px; width: 240px; height: 54px; background: FFDCE5; font-weight: 500; letter-spacing: -0.1px;}"
+      ],
+      "settings": {
+        "collection": "led-therapy",
+        "products_to_show": 4,
+        "title": "Products on sale",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_cjgD8e": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_RhiBit": {
+          "type": "heading",
+          "settings": {
+            "heading": "Why Customers Trust Lunara Light",
+            "heading_size": "h0"
+          }
+        },
+        "text_rQa9mq": {
+          "type": "text",
+          "settings": {
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_RhiBit",
+        "text_rQa9mq"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 0
+      }
+    },
+    "custom_liquid_fXMdD4": {
+      "type": "custom-liquid",
+      "custom_css": [
+        ".review-swiper {max-width: 1100px; padding: 20px;}",
+        ".swiper-pagination-bullet-active {background: #fa9eb2;}",
+        ".author-name {font-size: 12px;}",
+        ".verified-badge {font-size: 12px;}",
+        ".arrow-icon {position: absolute; width: 32px; height: 32px; margin: 4px;}"
+      ],
+      "name": "review-slider ",
+      "settings": {
+        "custom_liquid": "<!-- Swiper CSS + JS -->\n<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css\">\n<script src=\"https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js\"></script>\n\n<div class=\"swiper review-swiper\">\n  <div class=\"swiper-wrapper\">\n\n    <div class=\"swiper-slide\">\n      <div class=\"review-card\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0951/2766/7027/files/11.jpg\" alt=\"review photo\" class=\"review-photo\">\n        <div class=\"review-stars\">⭐⭐⭐⭐⭐</div>\n        <h4 class=\"review-title\">Acne Marks Faded</h4>\n        <p class=\"review-text\">This mask helped fade my post-acne redness way more than any serum I’ve used. I use it every night while reading. After one month, my cheeks are clearer and tone is more even.</p>\n        <div class=\"review-author\">\n          <span class=\"author-name\">🇺🇸 — Jessica M.</span>\n          <span class=\"verified-badge\">✅ Verified customer</span>\n        </div>\n      </div>\n    </div>\n\n<div class=\"swiper-slide\">\n      <div class=\"review-card\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0951/2766/7027/files/14.jpg\" alt=\"review photo\" class=\"review-photo\">\n        <div class=\"review-stars\">⭐⭐⭐⭐⭐</div>\n        <h4 class=\"review-title\">Wrinkles Look Softer</h4>\n        <p class=\"review-text\">I’m 47, and my main issue was fine lines around the mouth and eyes. This mask made my skin look visibly smoother in three weeks. Friends noticed before I did.</p>\n        <div class=\"review-author\">\n          <span class=\"author-name\">🇺🇸 — Karen D.</span>\n          <span class=\"verified-badge\">✅ Verified customer</span>\n        </div>\n      </div>\n    </div>\n\n<div class=\"swiper-slide\">\n      <div class=\"review-card\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0951/2766/7027/files/18.jpg\" alt=\"review photo\" class=\"review-photo\">\n        <div class=\"review-stars\">⭐⭐⭐⭐⭐</div>\n        <h4 class=\"review-title\">No More Makeup Dependence</h4>\n        <p class=\"review-text\">For years I wore makeup to hide acne. Since using the Lunara mask, I finally feel comfortable bare-faced. My skin tone is smoother, and the bumps are gone.</p>\n        <div class=\"review-author\">\n          <span class=\"author-name\">🇺🇸 — Lindsey M.</span>\n          <span class=\"verified-badge\">✅ Verified customer</span>\n        </div>\n      </div>\n    </div>\n\n<div class=\"swiper-slide\">\n      <div class=\"review-card\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0951/2766/7027/files/12.jpg\" alt=\"review photo\" class=\"review-photo\">\n        <div class=\"review-stars\">⭐⭐⭐⭐⭐</div>\n        <h4 class=\"review-title\">Breakouts Under Control</h4>\n        <p class=\"review-text\">My hormonal acne has always flared up around my jawline — this mask changed that. After just two weeks, my breakouts slowed down and my skin feels calmer and clearer.</p>\n        <div class=\"review-author\">\n          <span class=\"author-name\">🇺🇸 — Ashley T.</span>\n          <span class=\"verified-badge\">✅ Verified customer</span>\n        </div>\n      </div>\n    </div>\n\n<div class=\"swiper-slide\">\n      <div class=\"review-card\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0951/2766/7027/files/13.jpg\" alt=\"review photo\" class=\"review-photo\">\n        <div class=\"review-stars\">⭐⭐⭐⭐⭐</div>\n        <h4 class=\"review-title\">From Inflamed to Calm</h4>\n        <p class=\"review-text\">I struggled with painful cystic acne and redness. This mask helped reduce the swelling and brought my skin back to a calm, even tone. It’s the only thing that’s worked long term.</p>\n        <div class=\"review-author\">\n          <span class=\"author-name\">🇺🇸 — Hailey J. </span>\n          <span class=\"verified-badge\">✅ Verified customer</span>\n        </div>\n      </div>\n    </div>\n\n<div class=\"swiper-slide\">\n      <div class=\"review-card\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0951/2766/7027/files/15.jpg\" alt=\"review photo\" class=\"review-photo\">\n        <div class=\"review-stars\">⭐⭐⭐⭐⭐</div>\n        <h4 class=\"review-title\">Less Oily, Fewer Pimples</h4>\n        <p class=\"review-text\">I used to wake up with new breakouts every morning. Now my skin feels balanced, not greasy, and breakouts are rare. Total game changer for me!</p>\n        <div class=\"review-author\">\n          <span class=\"author-name\">🇺🇸 — Nicole R.</span>\n          <span class=\"verified-badge\">✅ Verified customer</span>\n        </div>\n      </div>\n    </div>\n\n\n\n<div class=\"swiper-slide\">\n      <div class=\"review-card\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0951/2766/7027/files/16.jpg\" alt=\"review photo\" class=\"review-photo\">\n        <div class=\"review-stars\">⭐⭐⭐⭐⭐</div>\n        <h4 class=\"review-title\">Dry Skin Rejuvenated</h4>\n        <p class=\"review-text\">My skin is extremely dry and fine lines show easily. This LED mask made my skin feel deeply hydrated and more elastic. The dryness and creasing are almost gone.</p>\n        <div class=\"review-author\">\n          <span class=\"author-name\">🇺🇸 — Allison B.</span>\n          <span class=\"verified-badge\">✅ Verified customer</span>\n        </div>\n      </div>\n    </div>\n\n<div class=\"swiper-slide\">\n      <div class=\"review-card\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0951/2766/7027/files/17.jpg\" alt=\"review photo\" class=\"review-photo\">\n        <div class=\"review-stars\">⭐⭐⭐⭐⭐</div>\n        <h4 class=\"review-title\">Fast Results on Acne</h4>\n        <p class=\"review-text\">I saw improvement after just 4 sessions. The light calmed my skin right away, and breakouts reduced within the first week. I didn’t expect it to work this fast.</p>\n        <div class=\"review-author\">\n          <span class=\"author-name\">🇺🇸 — Emily G.</span>\n          <span class=\"verified-badge\">✅ Verified customer</span>\n        </div>\n      </div>\n    </div>\n\n\n\n<div class=\"swiper-slide\">\n      <div class=\"review-card\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0951/2766/7027/files/19.jpg\" alt=\"review photo\" class=\"review-photo\">\n        <div class=\"review-stars\">⭐⭐⭐⭐⭐</div>\n        <h4 class=\"review-title\">Pores Look Smaller</h4>\n        <p class=\"review-text\">My skin used to feel rough and look full of huge pores. This mask changed the texture dramatically — now it looks tighter and much smoother overall.</p>\n        <div class=\"review-author\">\n          <span class=\"author-name\">🇺🇸 — Rachel N. </span>\n          <span class=\"verified-badge\">✅ Verified customer</span>\n        </div>\n      </div>\n    </div>\n  \n\n  \n  </div>\n  <div class=\"swiper-button-prev custom-swiper-button\">\n    <img class=\"arrow-icon\" src=\"https://cdn.shopify.com/s/files/1/0951/2766/7027/files/Arrow-left.png\" alt=\"prev\" width=\"24\">\n  </div>\n  <div class=\"swiper-button-next custom-swiper-button\">\n    <img class=\"arrow-icon\" src=\"https://cdn.shopify.com/s/files/1/0951/2766/7027/files/Arrow-right.png\" alt=\"next\" width=\"24\">\n  </div>\n  <div class=\"swiper-pagination\"></div>\n</div>\n\n<style>\n.review-card {\n  border: 1px solid #ffdbe5;\n  border-radius: 16px;\n  padding: 16px;\n  text-align: left;\n  background: #fff;\n  margin-bottom: 20px;\n}\n.review-photo {\n  width: 100%;\n  height: auto;\n  border-radius: 6px;\n}\n.review-stars {\n  color: #FFD700;\n  font-size: 1.2rem;\n  margin-top: 8px;\n}\n.review-title {\n  font-weight: bold;\n  margin: 8px 0 4px;\n}\n.review-text {\n  font-size: 12px;\n  color: #333;\n  line-height: 155%;\n  letter-spacing: 0.1px;\n}\n.review-author {\n  margin-top: 10px;\n  font-size: 0.85rem;\n}\n.verified-badge {\n  color: green;\n  margin-left: 6px;\n}\n.review-swiper {\n  padding: 20px;\n  position: relative;\n}\n.swiper-slide {\n  width: 300px;\n}\n.custom-swiper-button {\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n  z-index: 10;\n  cursor: pointer;\n}\n.swiper-button-prev {\n  left: 0px;\n  color: transparent;\n}\n.swiper-button-next {\n  right: 0px;\n  color: transparent;\n}\n</style>\n\n<script>\n  document.addEventListener('DOMContentLoaded', function () {\n    new Swiper('.review-swiper', {\n      slidesPerView: 3,\n      spaceBetween: 20,\n      navigation: {\n        nextEl: '.swiper-button-next',\n        prevEl: '.swiper-button-prev'\n      },\n      pagination: {\n        el: '.swiper-pagination',\n        clickable: true\n      },\n      breakpoints: {\n        768: { slidesPerView: 3 },\n        480: { slidesPerView: 2 },\n        0: { slidesPerView: 1 }\n      }\n    });\n  });\n</script>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
+    },
+    "custom_liquid_RjaDkw": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "custom_css": [
+        ".review-quote {margin: 12px;}"
+      ],
+      "name": "`video",
+      "settings": {
+        "custom_liquid": "<div class=\"doctor-review-container\">\n  <div class=\"doctor-review-wrapper\">\n    <div class=\"doctor-review-image\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0951/2766/7027/files/maxresdefault_1.jpg\" alt=\"Dr Shah\" class=\"review-thumbnail\" onclick=\"openVideoPopup()\">\n      <button class=\"play-button\" onclick=\"openVideoPopup()\">▶</button>\n    </div>\n    <div class=\"doctor-review-text\">\n      <div class=\"review-badge\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0951/2766/7027/files/trust.svg\" alt=\"trust icon\" class=\"badge-icon\">\n        TRUSTED AND RECOMMENDED BY LEADING SKINCARE PROFESSIONALS\n      </div>\n      <blockquote class=\"review-quote\">\n        \"<strong>The most advanced LED mask</strong> I’ve tested recently. Just remember — consistency is everything <strong>if you want real results.</strong>\"\n      </blockquote>\n    </div>\n  </div>\n\n  <div id=\"videoPopup\" class=\"popup-overlay\" onclick=\"closeVideoPopup()\">\n    <div class=\"popup-content\" onclick=\"event.stopPropagation()\">\n      <button class=\"close-popup\" onclick=\"closeVideoPopup()\">&times;</button>\n      <iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/I2Fe-kP-2Jg\" frameborder=\"0\" allowfullscreen></iframe>\n    </div>\n  </div>\n</div>\n\n<style>\n.doctor-review-container {\n  max-width: 1100px;\n  margin: 0 auto;\n  padding: 16px;\n}\n.doctor-review-wrapper {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 60px;\n  align-items: center;\n  flex-direction: row;\n}\n.doctor-review-image {\n  position: relative;\n  flex: 0 0 auto;\n  width: 100%;\n  max-width: 430px;\n}\n.review-thumbnail {\n  width: 100%;\n  border-radius: 24px;\n  cursor: pointer;\n  height: 400px;\n}\n.play-button {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  background: white;\n  border: none;\n  font-size: 28px;\n  width: 48px;\n  height: 48px;\n  border-radius: 50%;\n  cursor: pointer;\n  box-shadow: 0 2px 6px rgba(0,0,0,0.2);\n}\n.doctor-review-text {\n  flex: 1;\n  min-width: 250px;\n}\n.review-badge {\n  background: #FFF7F9;\n  padding: 12px 20px;\n  border-radius: 40px;\n  display: inline-flex;\n  align-items: center;\n  gap: 10px;\n  margin-bottom: 24px;\n  font-size: 14px;\n  font-weight: 600;\n  border: 2px solid #FA9EB2;\n}\n.badge-icon {\n  width: 24px;\n  height: 24px;\n}\n.review-quote {\n  font-size: 28px;\n  line-height: 1.4;\n  font-family: Georgia, serif;\n}\n.popup-overlay {\n  display: none;\n  position: fixed;\n  top: 0; left: 0; right: 0; bottom: 0;\n  background: rgba(0, 0, 0, 0.7);\n  justify-content: center;\n  align-items: center;\n  z-index: 1000;\n}\n.popup-overlay.active {\n  display: flex;\n}\n.popup-content {\n  background: #000;\n  width: 90%;\n  max-width: 800px;\n  aspect-ratio: 16 / 9;\n  position: relative;\n  border-radius: 10px;\n  overflow: hidden;\n}\n.close-popup {\n  position: absolute;\n  top: 8px;\n  right: 12px;\n  background: none;\n  border: none;\n  font-size: 28px;\n  color: white;\n  cursor: pointer;\n}\n\n@media (max-width: 768px) {\n  .doctor-review-wrapper {\n    flex-direction: column-reverse;\n    gap: 24px;\n  }\n  .doctor-review-image {\n    max-width: 100%;\n  }\n}\n@media (max-width: 768px) {\n  .doctor-review-wrapper {\n    flex-direction: column;\n    gap: 24px;\n  }\n.review-thumbnail {\n  height: auto;\n}\n</style>\n\n<script>\nfunction openVideoPopup() {\n  document.getElementById(\"videoPopup\").classList.add(\"active\");\n}\nfunction closeVideoPopup() {\n  document.getElementById(\"videoPopup\").classList.remove(\"active\");\n}\n</script>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "collection_list_X8YLT8": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_fW69wj": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "led-therapy"
+          }
+        },
+        "featured_collection_pzp78N": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "health-comfort"
+          }
+        },
+        "featured_collection_xhyMTh": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "for-woman"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_fW69wj",
+        "featured_collection_pzp78N",
+        "featured_collection_xhyMTh"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "title": "Shop By Category",
+        "heading_size": "h0",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "scheme-2",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_FVKzGc": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_7KTAEk": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is LED light therapy safe to use at home?",
+            "icon": "check_mark",
+            "row_content": "<p>Yes. All Lunara Light devices use clinically studied wavelengths that are non-invasive, UV-free, and safe for daily use.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_eLz64h": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How long should I use the device each session?",
+            "icon": "check_mark",
+            "row_content": "<p>Recommended use is 15–20 minutes per session. Most users see results with consistent daily use.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_QY48LM": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "When will I start seeing results?",
+            "icon": "check_mark",
+            "row_content": "<p>Visible improvements typically appear within 2–4 weeks of regular use, depending on skin type and concern.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_eGzhqq": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I use it with skincare products?",
+            "icon": "check_mark",
+            "row_content": "<p>Yes. LED therapy enhances the absorption of serums and creams. Apply after cleansing and before the session.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_Fh4rzF": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Does it work for all skin types?",
+            "icon": "check_mark",
+            "row_content": "<p>Absolutely. Lunara Light is designed for all skin tones and types, including sensitive skin.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_bLiqcH": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is it painful or uncomfortable?",
+            "icon": "check_mark",
+            "row_content": "<p>No. The treatment is completely painless and does not cause irritation or downtime.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_7KTAEk",
+        "collapsible_row_eLz64h",
+        "collapsible_row_QY48LM",
+        "collapsible_row_eGzhqq",
+        "collapsible_row_Fh4rzF",
+        "collapsible_row_bLiqcH"
+      ],
+      "custom_css": [
+        "h2 {font-size: 44px; letter-spacing: -0.5px;}",
+        ".rte {font-size: 14px; letter-spacing: 0.1px; line-height: 160%;}"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Frequently Asked Questions",
+        "heading_size": "h0",
+        "heading_alignment": "center",
+        "layout": "none",
+        "container_color_scheme": "",
+        "color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom_liquid_4bKmci": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "name": "reviews",
+      "settings": {
+        "custom_liquid": "<div class=\"masonry-container\">\n  <div class=\"masonry-col col-1\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0951/2766/7027/files/review-1.png\" alt=\"\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0951/2766/7027/files/review-5.png\" alt=\"\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0951/2766/7027/files/review-9.jpg\" alt=\"\">\n  </div>\n  <div class=\"masonry-col col-2\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0951/2766/7027/files/review-2.png\" alt=\"\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0951/2766/7027/files/review-6.png\" alt=\"\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0951/2766/7027/files/review-10.png\" alt=\"\">\n  </div>\n  <div class=\"masonry-col col-3 mobile-hide\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0951/2766/7027/files/review-3.png\" alt=\"\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0951/2766/7027/files/review-7.png\" alt=\"\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0951/2766/7027/files/review-11.png\" alt=\"\">\n  </div>\n  <div class=\"masonry-col col-4 mobile-hide\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0951/2766/7027/files/review-4.png\" alt=\"\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0951/2766/7027/files/review-8.png\" alt=\"\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0951/2766/7027/files/review-12.png\" alt=\"\">\n  </div>\n</div>\n\n<style>\n.masonry-container {\n  display: flex;\n  justify-content: center;\n  max-width: 1100px;\n  margin: 0 auto;\n  gap: 16px;\n  flex-wrap: wrap;\n}\n.masonry-col {\n  display: flex;\n  flex-direction: column;\n  gap: 16px;\n  flex: 1;\n}\n.masonry-col img {\n  width: 100%;\n  height: auto;\n  display: block;\n}\n@media (max-width: 767px) {\n  .mobile-hide {\n    display: none;\n  }\n  .masonry-container {\n    padding-left: 16px;\n    padding-right: 16px;\n    gap: 16px;\n  }\n  .col-1, .col-2 {\n    width: calc(50% - 8px);\n  }\n}\n</style>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "featured_blog_YN4gy7": {
+      "type": "featured-blog",
+      "name": "t:sections.featured-blog.presets.name",
+      "settings": {
+        "blog": "news",
+        "post_limit": 3,
+        "heading": "Blog posts",
+        "heading_size": "h1",
+        "columns_desktop": 3,
+        "show_view_all": true,
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "image_with_text_QRaGNt",
+    "custom_liquid_nfgGrh",
+    "multicolumn_FaTbGf",
+    "featured_collection_TyrRjP",
+    "rich_text_cjgD8e",
+    "custom_liquid_fXMdD4",
+    "custom_liquid_RjaDkw",
+    "collection_list_X8YLT8",
+    "collapsible_content_FVKzGc",
+    "custom_liquid_4bKmci",
+    "featured_blog_YN4gy7"
+  ]
+}
