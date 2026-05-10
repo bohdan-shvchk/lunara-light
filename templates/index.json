@@ -388,9 +388,12 @@
       "settings": {
         "blog": "news",
         "post_limit": 4,
+        "card_title_font_size": 16,
+        "card_excerpt_font_size": 12,
+        "excerpt_lines": 2,
         "heading": "Blog posts",
         "heading_size": "h1",
-        "columns_desktop": 2,
+        "columns_desktop": 4,
         "show_view_all": true,
         "show_image": true,
         "show_date": true,
