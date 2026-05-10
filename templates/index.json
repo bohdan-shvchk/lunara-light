@@ -384,6 +384,7 @@
     },
     "featured_blog_YN4gy7": {
       "type": "featured-blog",
+      "custom_css": [],
       "name": "t:sections.featured-blog.presets.name",
       "settings": {
         "blog": "news",
