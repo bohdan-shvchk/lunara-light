@@ -1,0 +1,76 @@
+{%- comment -%}
+  LunaraLight PDP — FAQ Accordion (Section 7 of 8)
+  Native HTML <details> for accessibility + zero JS dependency.
+{%- endcomment -%}
+
+<section class="lumeda-pdp__faq" id="pdp-faq" data-section-id="{{ section.id }}">
+  <div class="lumeda-pdp__container lumeda-pdp__container--narrow">
+    <h2 class="lumeda-pdp__section-heading">{{ section.settings.heading }}</h2>
+
+    <div class="lumeda-pdp__faq-list">
+      {%- for block in section.blocks -%}
+        <details class="lumeda-pdp__faq-item" {{ block.shopify_attributes }}>
+          <summary class="lumeda-pdp__faq-question">
+            <span>{{ block.settings.question }}</span>
+            <svg class="lumeda-pdp__faq-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+              <path d="M12 5v14M5 12h14" stroke="#2D1B25" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </summary>
+          <div class="lumeda-pdp__faq-answer">{{ block.settings.answer }}</div>
+        </details>
+      {%- endfor -%}
+    </div>
+
+    {%- if section.settings.contact_text != blank -%}
+      <div class="lumeda-pdp__faq-contact">
+        <p>{{ section.settings.contact_text }}</p>
+      </div>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "PDP FAQ (LunaraLight)",
+  "tag": "section",
+  "class": "lumeda-pdp__faq-wrap",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Frequently asked questions"
+    },
+    {
+      "type": "richtext",
+      "id": "contact_text",
+      "label": "Contact line below FAQ",
+      "default": "<p>Still have questions? Email us at <a href='mailto:hello@lumeda.com'>hello@lumeda.com</a> \u2014 we reply within 24h.</p>"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "faq",
+      "name": "FAQ item",
+      "limit": 16,
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Question"
+        },
+        {
+          "type": "richtext",
+          "id": "answer",
+          "label": "Answer"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "PDP FAQ (LunaraLight)"
+    }
+  ]
+}
+{% endschema %}

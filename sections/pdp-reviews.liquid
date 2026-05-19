@@ -1,0 +1,167 @@
+{%- comment -%}
+  LunaraLight PDP — Reviews (Section 6 of 8)
+  Aggregate score + bar distribution + review cards. No live reviews app — uses content blocks until Judge.me / Loox is wired.
+{%- endcomment -%}
+
+<section class="lumeda-pdp__reviews" id="pdp-reviews" data-section-id="{{ section.id }}">
+  <div class="lumeda-pdp__container">
+    <div class="lumeda-pdp__reviews-header">
+      <h2 class="lumeda-pdp__section-heading">{{ section.settings.heading }}</h2>
+
+      <div class="lumeda-pdp__reviews-summary">
+        <div class="lumeda-pdp__reviews-aggregate">
+          <span class="lumeda-pdp__reviews-score">{{ section.settings.aggregate_score }}</span>
+          <span class="lumeda-pdp__reviews-stars">
+            {%- assign rating = section.settings.aggregate_score | times: 1 -%}
+            {%- for i in (1..5) -%}
+              <svg viewBox="0 0 20 20" fill="{% if i <= rating %}#E8455F{% else %}#FCCDD0{% endif %}" width="20" height="20"><path d="M10 1l2.6 5.7 6.2.7-4.6 4.3 1.2 6.2L10 14.8 4.6 17.9l1.2-6.2L1.2 7.4l6.2-.7z"/></svg>
+            {%- endfor -%}
+          </span>
+          <span class="lumeda-pdp__reviews-count">Based on {{ section.settings.review_count }} reviews</span>
+          {%- if section.settings.recommend_pct != blank -%}
+            <span class="lumeda-pdp__reviews-recommend">{{ section.settings.recommend_pct }}% would recommend</span>
+          {%- endif -%}
+        </div>
+
+        <div class="lumeda-pdp__reviews-bars" aria-label="Star distribution">
+          {%- assign distribution = section.settings.distribution | split: ',' -%}
+          {%- for pct in distribution -%}
+            {%- assign star = 5 | minus: forloop.index0 -%}
+            <div class="lumeda-pdp__reviews-bar-row">
+              <span class="lumeda-pdp__reviews-bar-label">{{ star }}★</span>
+              <div class="lumeda-pdp__reviews-bar-track"><div class="lumeda-pdp__reviews-bar-fill" style="width: {{ pct }}%"></div></div>
+              <span class="lumeda-pdp__reviews-bar-pct">{{ pct }}%</span>
+            </div>
+          {%- endfor -%}
+        </div>
+      </div>
+    </div>
+
+    <div class="lumeda-pdp__reviews-cards">
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'review' -%}
+          <article class="lumeda-pdp__review-card" {{ block.shopify_attributes }}>
+            <div class="lumeda-pdp__review-meta">
+              <span class="lumeda-pdp__review-avatar">{{ block.settings.author | slice: 0 | upcase }}</span>
+              <div>
+                <strong class="lumeda-pdp__review-author">{{ block.settings.author }}</strong>
+                <span class="lumeda-pdp__review-verified">✓ Verified buyer</span>
+              </div>
+              <span class="lumeda-pdp__review-stars">
+                {%- assign rev = block.settings.stars | times: 1 -%}
+                {%- for i in (1..5) -%}
+                  <svg viewBox="0 0 20 20" fill="{% if i <= rev %}#E8455F{% else %}#FCCDD0{% endif %}" width="14" height="14"><path d="M10 1l2.6 5.7 6.2.7-4.6 4.3 1.2 6.2L10 14.8 4.6 17.9l1.2-6.2L1.2 7.4l6.2-.7z"/></svg>
+                {%- endfor -%}
+              </span>
+            </div>
+            <h4 class="lumeda-pdp__review-title">{{ block.settings.title }}</h4>
+            <p class="lumeda-pdp__review-body">{{ block.settings.body }}</p>
+            {%- if block.settings.date != blank -%}
+              <span class="lumeda-pdp__review-date">{{ block.settings.date }}</span>
+            {%- endif -%}
+          </article>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+
+    {%- if section.settings.show_write_review -%}
+      <div class="lumeda-pdp__reviews-cta">
+        <a href="{{ section.settings.write_review_url | default: '#' }}" class="lumeda-pdp__btn lumeda-pdp__btn--ghost">Write a review</a>
+      </div>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "PDP Reviews (LunaraLight)",
+  "tag": "section",
+  "class": "lumeda-pdp__reviews-wrap",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "What customers say"
+    },
+    {
+      "type": "text",
+      "id": "aggregate_score",
+      "label": "Aggregate score (e.g. 4.8)",
+      "default": "4.8"
+    },
+    {
+      "type": "text",
+      "id": "review_count",
+      "label": "Total review count",
+      "default": "1,247"
+    },
+    {
+      "type": "text",
+      "id": "recommend_pct",
+      "label": "% would recommend",
+      "default": "97"
+    },
+    {
+      "type": "text",
+      "id": "distribution",
+      "label": "Star distribution (5,4,3,2,1 as comma list)",
+      "default": "82,12,4,1,1"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_write_review",
+      "label": "Show 'Write a review' button",
+      "default": true
+    },
+    {
+      "type": "url",
+      "id": "write_review_url",
+      "label": "Write review URL"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "review",
+      "name": "Review card",
+      "limit": 12,
+      "settings": [
+        {
+          "type": "text",
+          "id": "author",
+          "label": "Author",
+          "default": "Sarah K."
+        },
+        {
+          "type": "text",
+          "id": "stars",
+          "label": "Stars (1-5)",
+          "default": "5"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Review title",
+          "default": "Visible difference in 3 weeks"
+        },
+        {
+          "type": "textarea",
+          "id": "body",
+          "label": "Review body",
+          "default": "I was skeptical of at-home LED devices but the Lumeda has changed my evening routine. My jawline looks more defined and my skin tone is noticeably more even."
+        },
+        {
+          "type": "text",
+          "id": "date",
+          "label": "Date (e.g. Mar 12, 2026)"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "PDP Reviews (LunaraLight)"
+    }
+  ]
+}
+{% endschema %}
