@@ -1,0 +1,127 @@
+{%- comment -%}
+  LunaraLight PDP — Feature Deep-Dive (Section 4 of 8)
+  Repeating image+text section. Each block alternates left/right via "image_position" setting.
+{%- endcomment -%}
+
+<section class="lumeda-pdp__deepdive" id="pdp-features" data-section-id="{{ section.id }}">
+  <div class="lumeda-pdp__container">
+    {%- if section.settings.heading != blank -%}
+      <h2 class="lumeda-pdp__section-heading">{{ section.settings.heading }}</h2>
+    {%- endif -%}
+    {%- if section.settings.subheading != blank -%}
+      <p class="lumeda-pdp__section-subheading">{{ section.settings.subheading }}</p>
+    {%- endif -%}
+
+    <div class="lumeda-pdp__deepdive-stack">
+      {%- for block in section.blocks -%}
+        <article class="lumeda-pdp__deepdive-row lumeda-pdp__deepdive-row--{{ block.settings.image_position }}" {{ block.shopify_attributes }}>
+          <div class="lumeda-pdp__deepdive-image">
+            {%- if block.settings.image != blank -%}
+              <img
+                src="{{ block.settings.image | image_url: width: 1200 }}"
+                srcset="{{ block.settings.image | image_url: width: 600 }} 600w, {{ block.settings.image | image_url: width: 1200 }} 1200w, {{ block.settings.image | image_url: width: 1800 }} 1800w"
+                sizes="(min-width: 990px) 50vw, 100vw"
+                alt="{{ block.settings.title | escape }}"
+                loading="lazy"
+                width="1200" height="1200"
+              >
+            {%- else -%}
+              <div class="lumeda-pdp__placeholder">{{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' }}</div>
+            {%- endif -%}
+          </div>
+          <div class="lumeda-pdp__deepdive-copy">
+            {%- if block.settings.eyebrow != blank -%}
+              <span class="lumeda-pdp__eyebrow">{{ block.settings.eyebrow }}</span>
+            {%- endif -%}
+            <h3 class="lumeda-pdp__deepdive-title">{{ block.settings.title }}</h3>
+            <div class="lumeda-pdp__deepdive-body">{{ block.settings.body }}</div>
+            {%- if block.settings.callout != blank -%}
+              <p class="lumeda-pdp__callout">{{ block.settings.callout }}</p>
+            {%- endif -%}
+          </div>
+        </article>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "PDP Feature Deepdive",
+  "tag": "section",
+  "class": "lumeda-pdp__deepdive-wrap",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Section heading",
+      "default": "How LunaraLight works"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Sub-heading",
+      "default": "Clinical light therapy, designed for daily use."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Feature row",
+      "limit": 6,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "select",
+          "id": "image_position",
+          "label": "Image position",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ],
+          "default": "left"
+        },
+        {
+          "type": "text",
+          "id": "eyebrow",
+          "label": "Eyebrow",
+          "default": "Step 1"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Cleanse and prep"
+        },
+        {
+          "type": "richtext",
+          "id": "body",
+          "label": "Body copy",
+          "default": "<p>Begin with clean, dry skin. The Lumeda's medical-grade LEDs penetrate dermal layers most efficiently when there's no barrier between light and skin.</p>"
+        },
+        {
+          "type": "text",
+          "id": "callout",
+          "label": "Callout / spec line",
+          "default": "60 seconds \u00b7 No serums needed"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "PDP Feature Deepdive"
+    }
+  ]
+}
+{% endschema %}

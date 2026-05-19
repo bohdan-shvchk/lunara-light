@@ -1,0 +1,110 @@
+{%- comment -%}
+  LunaraLight PDP — Comparison Table (Section 5 of 8)
+  Rows = comparison axes. Columns = LunaraLight + 2 competitor labels (settings).
+{%- endcomment -%}
+
+<section class="lumeda-pdp__compare" id="pdp-compare" data-section-id="{{ section.id }}">
+  <div class="lumeda-pdp__container">
+    <h2 class="lumeda-pdp__section-heading">{{ section.settings.heading }}</h2>
+    {%- if section.settings.subheading != blank -%}
+      <p class="lumeda-pdp__section-subheading">{{ section.settings.subheading }}</p>
+    {%- endif -%}
+
+    <div class="lumeda-pdp__compare-table-wrap">
+      <table class="lumeda-pdp__compare-table">
+        <thead>
+          <tr>
+            <th scope="col" class="lumeda-pdp__compare-axis"></th>
+            <th scope="col" class="lumeda-pdp__compare-us">{{ section.settings.col_us }}</th>
+            <th scope="col">{{ section.settings.col_b }}</th>
+            <th scope="col">{{ section.settings.col_c }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {%- for block in section.blocks -%}
+            <tr {{ block.shopify_attributes }}>
+              <th scope="row" class="lumeda-pdp__compare-axis">{{ block.settings.axis }}</th>
+              <td class="lumeda-pdp__compare-us">{{ block.settings.us }}</td>
+              <td>{{ block.settings.b }}</td>
+              <td>{{ block.settings.c }}</td>
+            </tr>
+          {%- endfor -%}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "PDP Comparison",
+  "tag": "section",
+  "class": "lumeda-pdp__compare-wrap",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Why LunaraLight vs other LED devices"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Sub-heading",
+      "default": "Clinical-grade specs without the clinical-grade price."
+    },
+    {
+      "type": "text",
+      "id": "col_us",
+      "label": "Us column label",
+      "default": "LunaraLight"
+    },
+    {
+      "type": "text",
+      "id": "col_b",
+      "label": "Competitor B label",
+      "default": "Generic LED Wand"
+    },
+    {
+      "type": "text",
+      "id": "col_c",
+      "label": "Competitor C label",
+      "default": "Premium Spa Device"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "row",
+      "name": "Comparison row",
+      "limit": 12,
+      "settings": [
+        {
+          "type": "text",
+          "id": "axis",
+          "label": "Axis (left col)"
+        },
+        {
+          "type": "text",
+          "id": "us",
+          "label": "LunaraLight value"
+        },
+        {
+          "type": "text",
+          "id": "b",
+          "label": "Competitor B value"
+        },
+        {
+          "type": "text",
+          "id": "c",
+          "label": "Competitor C value"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "PDP Comparison"
+    }
+  ]
+}
+{% endschema %}

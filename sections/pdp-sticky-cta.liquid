@@ -1,0 +1,46 @@
+{%- comment -%}
+  LunaraLight PDP — Sticky CTA Bar (Section 1.5 — sits between hero and icon row)
+  Reveals on scroll past hero. Desktop = top bar w/ anchor nav + ATC pill. Mobile = bottom bar w/ thumb + price + ATC.
+{%- endcomment -%}
+
+<div class="lumeda-pdp__sticky" data-section-id="{{ section.id }}" data-sticky-cta hidden>
+  <div class="lumeda-pdp__container lumeda-pdp__sticky-inner">
+
+    {%- comment -%} Desktop: anchor nav left, ATC right {%- endcomment -%}
+    <nav class="lumeda-pdp__sticky-nav" aria-label="Page sections">
+      <a href="#pdp-icon-features">Features</a>
+      <a href="#pdp-features">How it works</a>
+      <a href="#pdp-compare">Compare</a>
+      <a href="#pdp-reviews">Reviews</a>
+      <a href="#pdp-faq">FAQ</a>
+    </nav>
+
+    {%- comment -%} Mobile: thumb + name + price {%- endcomment -%}
+    <div class="lumeda-pdp__sticky-product">
+      {%- if product.featured_image -%}
+        <img src="{{ product.featured_image | image_url: width: 100 }}" alt="" width="40" height="40" loading="lazy">
+      {%- endif -%}
+      <div class="lumeda-pdp__sticky-product-meta">
+        <strong>{{ product.title | truncate: 36 }}</strong>
+        <span>{{ product.price | money }}{% if product.compare_at_price > product.price %} <s>{{ product.compare_at_price | money }}</s>{% endif %}</span>
+      </div>
+    </div>
+
+    <button type="button" class="lumeda-pdp__sticky-cta" data-sticky-add {% if product.available == false %}disabled{% endif %}>
+      {% if product.available %}{{ section.settings.cta_label | default: 'Add to cart' }}{% else %}Sold out{% endif %}
+    </button>
+
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "PDP Sticky CTA",
+  "tag": "div",
+  "class": "lumeda-pdp__sticky-wrap",
+  "settings": [
+    { "type": "text", "id": "cta_label", "label": "Add to cart label", "default": "Add to cart" }
+  ],
+  "presets": [ { "name": "PDP Sticky CTA" } ]
+}
+{% endschema %}

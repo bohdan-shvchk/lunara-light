@@ -1,0 +1,562 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "asset-loader": {
+      "type": "pdp-styles",
+      "settings": {}
+    },
+    "hero": {
+      "type": "pdp-hero",
+      "blocks": {
+        "h1": {
+          "type": "highlight",
+          "settings": {
+            "lead": "660nm + 850nm dual wavelength",
+            "text": "Red light for skin, near-infrared for deep tissue — one panel, both targets"
+          }
+        },
+        "h2": {
+          "type": "highlight",
+          "settings": {
+            "lead": "216 dual-chip LEDs",
+            "text": "Full-body coverage — face, neck, back, joints — in one 10-minute session"
+          }
+        },
+        "h3": {
+          "type": "highlight",
+          "settings": {
+            "lead": "CE certified",
+            "text": "EU-validated, clinically studied wavelengths — zero UV, zero heat risk"
+          }
+        },
+        "h4": {
+          "type": "highlight",
+          "settings": {
+            "lead": "Adjustable stand included",
+            "text": "Desk or floor use, hands-free — no holding required"
+          }
+        },
+        "h5": {
+          "type": "highlight",
+          "settings": {
+            "lead": "Results in 4 weeks",
+            "text": "Visible collagen improvement and reduced inflammation with daily use"
+          }
+        },
+        "t1": {
+          "type": "trust",
+          "settings": {
+            "icon": "shield",
+            "text": "30-Day Money Back"
+          }
+        },
+        "t2": {
+          "type": "trust",
+          "settings": {
+            "icon": "truck",
+            "text": "Free EU Shipping"
+          }
+        },
+        "t3": {
+          "type": "trust",
+          "settings": {
+            "icon": "sparkle",
+            "text": "Safe All Skin Types"
+          }
+        },
+        "t4": {
+          "type": "trust",
+          "settings": {
+            "icon": "clock",
+            "text": "Results in 4 Weeks"
+          }
+        },
+        "b1": {
+          "type": "benefit",
+          "settings": {
+            "text": "Stimulates collagen production and reduces fine lines"
+          }
+        },
+        "b2": {
+          "type": "benefit",
+          "settings": {
+            "text": "Accelerates muscle recovery after training"
+          }
+        },
+        "b3": {
+          "type": "benefit",
+          "settings": {
+            "text": "Reduces joint inflammation and chronic pain"
+          }
+        },
+        "b4": {
+          "type": "benefit",
+          "settings": {
+            "text": "Boosts cellular energy (ATP) for better focus and vitality"
+          }
+        },
+        "b5": {
+          "type": "benefit",
+          "settings": {
+            "text": "Improves circulation and skin tone"
+          }
+        },
+        "b6": {
+          "type": "benefit",
+          "settings": {
+            "text": "Supports natural melatonin production for better sleep"
+          }
+        },
+        "b7": {
+          "type": "benefit",
+          "settings": {
+            "text": "CE certified · Non-thermal · Non-UV · Safe for daily use"
+          }
+        }
+      },
+      "block_order": [
+        "h1",
+        "h2",
+        "h3",
+        "h4",
+        "h5",
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7"
+      ],
+      "settings": {
+        "bestseller_chip": "★ BEST SELLER · 5,000+ HEALED",
+        "quiz_label": "+ FIND YOUR THERAPY PROTOCOL FREE GUIDE",
+        "quiz_link": "/pages/guide",
+        "rating_value": "4.9",
+        "review_count": "1,247 Reviews",
+        "cta_label": "ADD TO CART",
+        "show_buy_now": true,
+        "shipping_line": "Free EU shipping on orders €99+. 30-day money-back guarantee.",
+        "urgency_text": "🔥 Limited stock — only 43 panels left at launch price",
+        "payment_icons": true
+      }
+    },
+    "sticky-cta": {
+      "type": "pdp-sticky-cta",
+      "settings": {}
+    },
+    "icon-features": {
+      "type": "pdp-features-iconrow",
+      "blocks": {
+        "f1": {
+          "type": "icon",
+          "settings": {
+            "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\"><circle cx=\"12\" cy=\"12\" r=\"4\"/><path d=\"M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1\"/></svg>",
+            "title": "660nm + 850nm",
+            "description": "Dual wavelength — skin surface and deep tissue treated simultaneously"
+          }
+        },
+        "f2": {
+          "type": "icon",
+          "settings": {
+            "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M8 12l3 3 5-6\"/></svg>",
+            "title": "CE Certified",
+            "description": "EU-validated safety. Clinically studied wavelengths, zero UV output."
+          }
+        },
+        "f3": {
+          "type": "icon",
+          "settings": {
+            "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\"><path d=\"M12 3c4 0 7 3 7 7 0 4.5-3 9-7 11-4-2-7-6.5-7-11 0-4 3-7 7-7z\"/><circle cx=\"12\" cy=\"11\" r=\"1.5\"/></svg>",
+            "title": "All skin types",
+            "description": "Non-thermal, non-UV. Safe for daily use on face, body and joints."
+          }
+        },
+        "f4": {
+          "type": "icon",
+          "settings": {
+            "icon_svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\"><path d=\"M12 3l2.6 5.7 6.4.8-4.7 4.4 1.2 6.3L12 17l-5.5 3.2 1.2-6.3L3 9.5l6.4-.8z\"/></svg>",
+            "title": "10 min sessions",
+            "description": "One daily session — visible results in 4–8 weeks of consistent use."
+          }
+        }
+      },
+      "block_order": [
+        "f1",
+        "f2",
+        "f3",
+        "f4"
+      ],
+      "settings": {}
+    },
+    "deepdive": {
+      "type": "pdp-feature-deepdive",
+      "blocks": {
+        "p1": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/lunara-light-deepdive-1.png",
+            "image_position": "left",
+            "eyebrow": "Step 1",
+            "title": "The wavelength science",
+            "body": "<p>660nm red light targets the skin surface — stimulating fibroblasts and collagen synthesis. 850nm near-infrared penetrates up to 40mm into muscle, joint and nerve tissue. Together they address what topical creams and gym stretches cannot reach.</p>",
+            "callout": "CE Certified · Clinically studied wavelengths"
+          }
+        },
+        "p2": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/lunara-light-deepdive-2.png",
+            "image_position": "right",
+            "eyebrow": "Step 2",
+            "title": "Your 10-minute ritual",
+            "body": "<p>Place the panel on the included stand. Position it 15–20cm from the target area. Press power. Set to RD (red), IR (infrared) or RD+IR combined. Treat one zone per session — face, neck, back, shoulders or knees. Done.</p>",
+            "callout": ""
+          }
+        },
+        "p3": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/lunara-light-deepdive-3.png",
+            "image_position": "left",
+            "eyebrow": "Step 3",
+            "title": "Built for serious daily use",
+            "body": "<p>216 dual-chip LEDs rated for 50,000 hours. Aluminium heat-dissipation body stays cool to the touch. Digital display shows active mode and timer. Comes complete with adjustable stand, protective goggles and EU power adapter.</p>",
+            "callout": ""
+          }
+        }
+      },
+      "block_order": [
+        "p1",
+        "p2",
+        "p3"
+      ],
+      "settings": {
+        "heading": "How LunaraLight works",
+        "subheading": ""
+      }
+    },
+    "comparison": {
+      "type": "pdp-comparison",
+      "blocks": {
+        "r1": {
+          "type": "row",
+          "settings": {
+            "axis": "Dual wavelength (660+850nm)",
+            "us": "yes",
+            "b": "single only",
+            "c": "yes"
+          }
+        },
+        "r2": {
+          "type": "row",
+          "settings": {
+            "axis": "216 LEDs full-body coverage",
+            "us": "yes",
+            "b": "varies",
+            "c": "partial"
+          }
+        },
+        "r3": {
+          "type": "row",
+          "settings": {
+            "axis": "CE certified",
+            "us": "yes",
+            "b": "no",
+            "c": "yes"
+          }
+        },
+        "r4": {
+          "type": "row",
+          "settings": {
+            "axis": "Cost per session",
+            "us": "€0.50",
+            "b": "€0.30",
+            "c": "€60–120"
+          }
+        },
+        "r5": {
+          "type": "row",
+          "settings": {
+            "axis": "Adjustable stand included",
+            "us": "yes",
+            "b": "no",
+            "c": "n/a"
+          }
+        },
+        "r6": {
+          "type": "row",
+          "settings": {
+            "axis": "Protective goggles included",
+            "us": "yes",
+            "b": "no",
+            "c": "provided"
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5",
+        "r6"
+      ],
+      "settings": {
+        "heading": "Why LunaraLight vs other options",
+        "subheading": "",
+        "col_us": "LunaraLight",
+        "col_b": "Generic LED Panel",
+        "col_c": "Clinic Sessions"
+      }
+    },
+    "reviews": {
+      "type": "pdp-reviews",
+      "blocks": {
+        "rev1": {
+          "type": "review",
+          "settings": {
+            "author": "Sofia M. ✓ Verified",
+            "stars": "5",
+            "title": "My knee pain is finally manageable",
+            "body": "I've had chronic knee inflammation for 3 years. After 5 weeks of daily sessions with the LunaraLight panel, the swelling is noticeably reduced and I'm sleeping through the night again. I was very skeptical at first but the results speak for themselves.",
+            "date": "March 2025"
+          }
+        },
+        "rev2": {
+          "type": "review",
+          "settings": {
+            "author": "Thomas B. ✓ Verified",
+            "stars": "5",
+            "title": "Skin texture improved dramatically",
+            "body": "I use it every morning on my face for 10 minutes. After 4 weeks the fine lines around my eyes are softer and my skin tone is more even. My dermatologist noticed the improvement at my last appointment.",
+            "date": "February 2025"
+          }
+        },
+        "rev3": {
+          "type": "review",
+          "settings": {
+            "author": "Anna K. ✓ Verified",
+            "stars": "5",
+            "title": "Post-workout recovery is incredible",
+            "body": "As someone who trains 5 days a week, muscle recovery was always my bottleneck. I use the infrared setting on my back and shoulders after every session. The difference in soreness the next day is night and day.",
+            "date": "April 2025"
+          }
+        },
+        "rev4": {
+          "type": "review",
+          "settings": {
+            "author": "Lena V. ✓ Verified",
+            "stars": "5",
+            "title": "Best purchase I've made this year",
+            "body": "Bought this for my lower back pain. The heat from the IR setting is deep and comforting — nothing like a hot pad. Pain reduced by at least 60% in the first two weeks. Solid build quality too.",
+            "date": "January 2025"
+          }
+        },
+        "rev5": {
+          "type": "review",
+          "settings": {
+            "author": "Marco D. ✓ Verified",
+            "stars": "4",
+            "title": "Great panel, setup takes 5 minutes",
+            "body": "The stand is a bit tricky to adjust at first but once it's set you don't need to touch it again. The panel itself is excellent — bright, powerful, quiet. Results on my shoulder injury started showing after week 3.",
+            "date": "March 2025"
+          }
+        },
+        "rev6": {
+          "type": "review",
+          "settings": {
+            "author": "Claire F. ✓ Verified",
+            "stars": "5",
+            "title": "I bought one for my mother too",
+            "body": "Started using it for skin care and ended up using it for my arthritis as well. Ordered a second one for my mother within a month. The protective goggles are comfortable and the digital display makes modes easy to understand.",
+            "date": "February 2025"
+          }
+        }
+      },
+      "block_order": [
+        "rev1",
+        "rev2",
+        "rev3",
+        "rev4",
+        "rev5",
+        "rev6"
+      ],
+      "settings": {
+        "heading": "What real customers say",
+        "aggregate_score": "4.9",
+        "review_count": "1,247",
+        "recommend_pct": "97",
+        "distribution": "82,11,4,2,1",
+        "show_write_review": true
+      }
+    },
+    "ugc-videos": {
+      "type": "pdp-ugc-videos",
+      "blocks": {
+        "v1": {
+          "type": "video",
+          "settings": {
+            "poster": "shopify://shop_images/lunara-light-ugc-poster-1.png",
+            "caption": "10 minutes a day changed everything",
+            "alt": "Customer testimonial 1"
+          }
+        },
+        "v2": {
+          "type": "video",
+          "settings": {
+            "poster": "shopify://shop_images/lunara-light-ugc-poster-2.png",
+            "caption": "My back pain is finally manageable",
+            "alt": "Customer testimonial 2"
+          }
+        },
+        "v3": {
+          "type": "video",
+          "settings": {
+            "poster": "shopify://shop_images/lunara-light-ugc-poster-3.png",
+            "caption": "Skin looks noticeably better after 3 weeks",
+            "alt": "Customer testimonial 3"
+          }
+        },
+        "v4": {
+          "type": "video",
+          "settings": {
+            "poster": "shopify://shop_images/lunara-light-ugc-poster-4.png",
+            "caption": "Worth every single cent",
+            "alt": "Customer testimonial 4"
+          }
+        },
+        "v5": {
+          "type": "video",
+          "settings": {
+            "poster": "shopify://shop_images/lunara-light-ugc-poster-5.png",
+            "caption": "I recommend this to everyone I know",
+            "alt": "Customer testimonial 5"
+          }
+        }
+      },
+      "block_order": [
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5"
+      ],
+      "settings": {
+        "heading": "Our customers feel the difference",
+        "highlight_word": "feel",
+        "highlight_color": "#E8455F"
+      }
+    },
+    "faq": {
+      "type": "pdp-faq",
+      "blocks": {
+        "q1": {
+          "type": "faq",
+          "settings": {
+            "question": "How far should I hold the panel from my skin?",
+            "answer": "<p>15–20cm for red light (660nm) for skin benefits. 20–30cm for near-infrared (850nm) for deeper tissue. The panel does not need to touch your skin — distance is part of the protocol.</p>"
+          }
+        },
+        "q2": {
+          "type": "faq",
+          "settings": {
+            "question": "How long are sessions and how often should I use it?",
+            "answer": "<p>10 minutes per zone, once daily. Start with 5 minutes if you're new to light therapy. Consistent daily use over 4–8 weeks produces the most visible results.</p>"
+          }
+        },
+        "q3": {
+          "type": "faq",
+          "settings": {
+            "question": "Is it safe to use near the eyes?",
+            "answer": "<p>Always wear the included protective goggles when directing the panel at your face or neck. The panel emits no UV radiation, but direct eye exposure to concentrated red/infrared LEDs is not recommended.</p>"
+          }
+        },
+        "q4": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I use it on my face and body?",
+            "answer": "<p>Yes. The 216-LED panel is large enough to cover the full face, neck, upper back, lower back, shoulders, or knees in a single session. Simply reposition the stand between zones.</p>"
+          }
+        },
+        "q5": {
+          "type": "faq",
+          "settings": {
+            "question": "What's the difference between the RD and IR modes?",
+            "answer": "<p>RD (660nm red light) works at the skin surface — best for collagen, skin tone, and wound healing. IR (850nm near-infrared) penetrates deeper — best for muscle recovery, joint inflammation, and pain. The RD+IR combined mode delivers both simultaneously.</p>"
+          }
+        },
+        "q6": {
+          "type": "faq",
+          "settings": {
+            "question": "How long until I see results?",
+            "answer": "<p>Most customers notice improved sleep, reduced soreness, and skin texture changes within 2–3 weeks of daily use. Significant collagen-related skin improvements typically show at 6–8 weeks. Joint and pain results vary by condition severity.</p>"
+          }
+        },
+        "q7": {
+          "type": "faq",
+          "settings": {
+            "question": "Is the EU power adapter included?",
+            "answer": "<p>Yes. Every panel ships with a CE-certified EU power adapter, adjustable aluminium stand, and protective goggles. Nothing extra to buy.</p>"
+          }
+        },
+        "q8": {
+          "type": "faq",
+          "settings": {
+            "question": "What is your return policy?",
+            "answer": "<p>30-day full refund — no questions asked. If you're not satisfied for any reason within 30 days of delivery, contact us and we'll arrange a free return label and full refund.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6",
+        "q7",
+        "q8"
+      ],
+      "settings": {
+        "heading": "Common questions",
+        "contact_text": "<p>Still have questions? Email <a href='mailto:support@lunaralight.com'>support@lunaralight.com</a> — we reply within 24 hours.</p>"
+      }
+    },
+    "final-cta": {
+      "type": "pdp-final-cta",
+      "settings": {
+        "bg_color": "#2D1B25",
+        "eyebrow": "Ready when you are",
+        "heading": "Start healing at home today",
+        "subheading": "30-day money-back guarantee. Free EU shipping.",
+        "cta_label": "Add to cart — €160.00",
+        "trust_line": "Was €320.00 · Save 50%"
+      }
+    }
+  },
+  "order": [
+    "asset-loader",
+    "hero",
+    "sticky-cta",
+    "icon-features",
+    "deepdive",
+    "comparison",
+    "reviews",
+    "ugc-videos",
+    "faq",
+    "final-cta"
+  ]
+}

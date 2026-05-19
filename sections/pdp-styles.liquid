@@ -1,0 +1,18 @@
+{%- comment -%}
+  LunaraLight PDP — Asset loader (must be first section in template)
+  Loads the pdp CSS + JS only on pages using this template.
+{%- endcomment -%}
+
+<link rel="stylesheet" href="{{ 'lunara-light-pdp.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="{{ 'lunara-light-pdp.css' | asset_url }}"></noscript>
+<script src="{{ 'lunara-light-pdp.js' | asset_url }}" defer></script>
+
+{% schema %}
+{
+  "name": "PDP Asset Loader",
+  "tag": "div",
+  "class": "lumeda-pdp__loader",
+  "settings": [],
+  "presets": [ { "name": "PDP Asset Loader" } ]
+}
+{% endschema %}
